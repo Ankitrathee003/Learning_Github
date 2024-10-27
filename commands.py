@@ -3,5 +3,4 @@
 # git checkout branch name (To Navigate)
 # git branch -d branch name (To delete branch)
 # to delete any branch we should be in other branch otherwise error throw hoga
-
- 
+# git reset file name ( to undo the added changes)
