@@ -1,0 +1,11 @@
+
+arr=[1,1,2,3,3]
+def chicken(arr):
+    time_to_mature=sum(arr[1:4])
+    cycle=arr[-1]//time_to_mature
+    hen=cycle*(cycle+1)/2 +arr[0]
+    return hen
+print(chicken(arr))
+
+
+
