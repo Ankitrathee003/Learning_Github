@@ -1,0 +1,3773 @@
+<!doctype html><html lang="en"><head>
+    <meta charset="utf-8">
+
+    <title>Automated Ecommerce Scraper API - Get real-time product data in bulk</title>
+    <link rel="shortcut icon" href="https://soax.com/hubfs/soax-s-white-on-blue.png">
+    <meta name="description" content="Our ecommerce scraper API delivers structured data on products, competitors, inventory, and market conditions in real-time.">
+    
+    
+   
+    
+
+    
+   
+    
+    
+    
+     
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:description" content="Our ecommerce scraper API delivers structured data on products, competitors, inventory, and market conditions in real-time.">
+    <meta property="og:title" content="Automated Ecommerce Scraper API - Get real-time product data in bulk">
+    <meta name="twitter:description" content="Our ecommerce scraper API delivers structured data on products, competitors, inventory, and market conditions in real-time.">
+    <meta name="twitter:title" content="Automated Ecommerce Scraper API - Get real-time product data in bulk">
+
+    
+
+    
+    <style>
+a.cta_button{-moz-box-sizing:content-box !important;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;vertical-align:middle}.hs-breadcrumb-menu{list-style-type:none;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px}.hs-breadcrumb-menu-item{float:left;padding:10px 0px 10px 10px}.hs-breadcrumb-menu-divider:before{content:'�';padding-left:10px}.hs-featured-image-link{border:0}.hs-featured-image{float:right;margin:0 0 20px 20px;max-width:50%}@media (max-width: 568px){.hs-featured-image{float:none;margin:0;width:100%;max-width:100%}}.hs-screen-reader-text{clip:rect(1px, 1px, 1px, 1px);height:1px;overflow:hidden;position:absolute !important;width:1px}
+</style>
+
+<link class="hs-async-css" rel="preload" href="https://soax.com/hs-fs/hub/25298778/hub_generated/template_assets/68239589609/1726759466976/soax-theme-live/css/main.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://soax.com/hs-fs/hub/25298778/hub_generated/template_assets/68239589609/1726759466976/soax-theme-live/css/main.min.css"></noscript>
+<link class="hs-async-css" rel="preload" href="https://soax.com/hs-fs/hub/25298778/hub_generated/template_assets/84348250835/1724954408415/soax-theme-live/css/custom-style-v3.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://soax.com/hs-fs/hub/25298778/hub_generated/template_assets/84348250835/1724954408415/soax-theme-live/css/custom-style-v3.min.css"></noscript>
+<link class="hs-async-css" rel="preload" href="https://soax.com/hs-fs/hub/25298778/hub_generated/template_assets/68232061659/1718713968708/soax-theme-live/css/theme-overrides.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://soax.com/hs-fs/hub/25298778/hub_generated/template_assets/68232061659/1718713968708/soax-theme-live/css/theme-overrides.min.css"></noscript>
+<link rel="stylesheet" href="https://soax.com/hs-fs/hub/25298778/hub_generated/module_assets/96218327266/1726749210317/module_96218327266_header-menu-v3.min.css">
+<link rel="stylesheet" href="https://soax.com/hs-fs/hub/25298778/hub_generated/module_assets/82799486444/1724953451003/module_82799486444_hero-v3.min.css">
+<link rel="stylesheet" href="https://soax.com/hs-fs/hub/25298778/hub_generated/module_assets/82839674571/1724876736389/module_82839674571_logos-v3.min.css">
+<link rel="stylesheet" href="https://soax.com/hs-fs/hub/25298778/hub_generated/module_assets/82848821453/1724962300601/module_82848821453_Title_v-3.min.css">
+<link rel="stylesheet" href="https://soax.com/hs-fs/hub/25298778/hub_generated/module_assets/82848822000/1724957659815/module_82848822000_title-image-cards-v3.min.css">
+<link rel="stylesheet" href="https://soax.com/hs-fs/hub/25298778/hub_generated/module_assets/83594346717/1724687617372/module_83594346717_cards-v3.min.css">
+<link rel="stylesheet" href="https://soax.com/hs-fs/hub/25298778/hub_generated/module_assets/83643377642/1724687851989/module_83643377642_cta-info-v3.min.css">
+<link rel="stylesheet" href="https://soax.com/hs-fs/hub/25298778/hub_generated/module_assets/83738520027/1724687906099/module_83738520027_questions-v3.min.css">
+<link rel="stylesheet" href="https://soax.com/hs-fs/hub/25298778/hub_generated/module_assets/79617950929/1727369630890/module_79617950929_menu-footer.min.css">
+
+<style>
+  #hs_cos_wrapper_module_16947241433922 .hs-menu-wrapper.flyouts .hs-menu-children-wrapper {
+  grid-gap:2rem;
+  margin-top:20px;
+}
+
+#hs_cos_wrapper_module_16947241433922 .footer__links-wrap {
+  grid-gap:4rem 4.8rem;
+  display:grid;
+  flex-wrap:wrap;
+  padding-bottom:6.2rem;
+  grid-template-columns:repeat(1,auto);
+  justify-content:flex-start;
+}
+
+</style>
+
+<style>
+  @font-face {
+    font-family: "Lato";
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url("/_hcms/googlefonts/Lato/regular.woff2") format("woff2"), url("/_hcms/googlefonts/Lato/regular.woff") format("woff");
+  }
+</style>
+
+<!-- Editor Styles -->
+<style id="hs_editor_style" type="text/css">
+.dnd_area-row-0-force-full-width-section > .row-fluid {
+  max-width: none !important;
+}
+.dnd_area-row-1-force-full-width-section > .row-fluid {
+  max-width: none !important;
+}
+.dnd_area-row-2-force-full-width-section > .row-fluid {
+  max-width: none !important;
+}
+.dnd_area-row-3-force-full-width-section > .row-fluid {
+  max-width: none !important;
+}
+.dnd_area-row-4-force-full-width-section > .row-fluid {
+  max-width: none !important;
+}
+.dnd_area-row-5-force-full-width-section > .row-fluid {
+  max-width: none !important;
+}
+.dnd_area-row-6-force-full-width-section > .row-fluid {
+  max-width: none !important;
+}
+.dnd_area-row-7-force-full-width-section > .row-fluid {
+  max-width: none !important;
+}
+/* HubSpot Styles (default) */
+.dnd_area-row-0-padding {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.dnd_area-row-1-padding {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.dnd_area-row-2-margin {
+  margin-top: -80px !important;
+}
+.dnd_area-row-2-padding {
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.dnd_area-row-3-padding {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.dnd_area-row-3-hidden {
+  display: none !important;
+}
+.dnd_area-row-4-margin {
+  margin-top: -150px !important;
+}
+.dnd_area-row-4-padding {
+  padding-top: 80px !important;
+  padding-bottom: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.dnd_area-row-5-padding {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.dnd_area-row-6-padding {
+  padding-top: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.dnd_area-row-7-padding {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.cell_16995670910692-padding {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.cell_17067165803822-margin {
+  margin-top: 0px !important;
+}
+.cell_17067165803822-padding {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.cell_17012663917502-padding {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.cell_17066363516702-padding {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.cell_17013360567702-margin {
+  margin-top: -120px !important;
+}
+.cell_17013360567702-padding {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.cell_17017804387392-padding {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.cell_17017794493883-padding {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+/* HubSpot Styles (mobile) */
+@media (max-width: 767px) {
+  .dnd_area-row-3-hidden {
+    display: none !important;
+  }
+}
+</style>
+    
+
+    
+    <link rel="canonical" href="https://soax.com/scraping/ecommerce">
+
+<meta property="og:site_name" content="SOAX">
+
+<!-- Google Tag Manager -->
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+
+})(window,document,'script','dataLayer','GTM-TMGPRXJ');</script>
+
+<!-- End Google Tag Manager -->
+<!-- new amplitude script -->
+<script type="text/javascript">
+!function(){"use strict";!function(e,t){var r=e.amplitude||{_q:[],_iq:{}};if(r.invoked)e.console&&console.error&&console.error("Amplitude snippet has been loaded.");else{var n=function(e,t){e.prototype[t]=function(){return this._q.push({name:t,args:Array.prototype.slice.call(arguments,0)}),this}},s=function(e,t,r){return function(n){e._q.push({name:t,args:Array.prototype.slice.call(r,0),resolve:n})}},o=function(e,t,r){e._q.push({name:t,args:Array.prototype.slice.call(r,0)})},i=function(e,t,r){e[t]=function(){if(r)return{promise:new Promise(s(e,t,Array.prototype.slice.call(arguments)))};o(e,t,Array.prototype.slice.call(arguments))}},a=function(e){for(var t=0;t<m.length;t++)i(e,m[t],!1);for(var r=0;r<g.length;r++)i(e,g[r],!0)};r.invoked=!0;var c=t.createElement("script");c.type="text/javascript",c.integrity="sha384-BWw9N39aN+4SdxZuwmRR0StXCLA+Bre4jR6bJt+pM1IqONNALC5rf25NkWMTyta5",c.crossOrigin="anonymous",c.async=!0,c.src="https://ampl.soax.com/libs/analytics-browser-2.9.3-min.js.gz",c.onload=function(){e.amplitude.runQueuedFunctions||console.log("[Amplitude] Error: could not load SDK")};var u=t.getElementsByTagName("script")[0];u.parentNode.insertBefore(c,u);for(var l=function(){return this._q=[],this},p=["add","append","clearAll","prepend","set","setOnce","unset","preInsert","postInsert","remove","getUserProperties"],d=0;d<p.length;d++)n(l,p[d]);r.Identify=l;for(var f=function(){return this._q=[],this},v=["getEventProperties","setProductId","setQuantity","setPrice","setRevenue","setRevenueType","setEventProperties"],y=0;y<v.length;y++)n(f,v[y]);r.Revenue=f;var m=["getDeviceId","setDeviceId","getSessionId","setSessionId","getUserId","setUserId","setOptOut","setTransport","reset","extendSession"],g=["init","add","remove","track","logEvent","identify","groupIdentify","setGroup","revenue","flush"];a(r),r.createInstance=function(e){return r._iq[e]={_q:[]},a(r._iq[e]),r._iq[e]},e.amplitude=r}}(window,document)}();
+</script>
+<script src="https://ampl.soax.com/libs/plugin-session-replay-browser-1.6.13-min.js.gz"></script>
+<script type="text/javascript">
+amplitude.add(window.sessionReplay.plugin({sampleRate: 1.0}));
+var apiKey = "5d066c29fbf86f800a86e93bca635d50";
+var userId = null;
+var options = {defaultTracking: true, serverUrl: "https://ampl.soax.com/amplitude"};
+amplitude.init(apiKey, userId, options);
+</script>
+
+<!--
+<script>
+
+  window.intercomSettings = {
+
+    api_base: "https://api-iam.intercom.io",
+
+    app_id: "auel99t6"
+
+  };
+
+</script>
+
+<script>
+
+// We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/auel99t6'
+
+(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/auel99t6';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+
+</script>
+-->
+
+<meta property="og:url" content="https://soax.com/scraping/ecommerce">
+<meta name="twitter:card" content="summary">
+<meta http-equiv="content-language" content="en">
+
+
+
+
+
+
+   
+  <meta name="generator" content="HubSpot"></head>
+  
+  <body>
+    <div class="body-wrapper   hs-content-id-87263923960 hs-site-page page ">
+      
+
+      <div data-global-resource-path="soax-theme-live/templates/partials/header-logo-menu.html"><div id="hs_cos_wrapper_module_171205051330812" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><header class="header header-new">
+  <div class="header__main-wrap">
+      <div class="container">
+        <div class="header__left">
+          <a class="header__logo" href="https://soax.com/">
+            <img src="https://soax.com/hubfs/raw_assets/public/soax-theme-live/images/header/header-logo.svg" alt="">
+          </a>
+          
+         <nav class="desktop-navigation">
+            <ul class="header__navigation">
+              
+              <li class="header__navigation-item sub ">
+                
+                <span class="header__navigation-link">
+                  Proxies
+                </span>
+                 
+                
+                  
+                    <div class="submenu submenu-proxies submenu-location">
+                      <div class="submenu-wrap">
+                        <div class="submenu-list-wrap">
+                          <p class="name">Proxies</p>
+                          <ul class="proxies-list">
+                           
+                              <li class="item">
+                                <a class="item-link" href="https://soax.com/proxies/residential">
+                                  <img class="icon" src="https://soax.com/hubfs/menu-icon.svg" alt="">
+                                  <div class="info">
+                                    <p class="title">Residential proxies</p>
+                                    <p class="desc">Browse using 155m+ real IPs across multiple regions</p>
+                                  </div>
+                                </a>
+                              </li>
+                            
+                              <li class="item">
+                                <a class="item-link" href="https://soax.com/proxies/isp">
+                                  <img class="icon" src="https://soax.com/hubfs/USUSP.svg" alt="">
+                                  <div class="info">
+                                    <p class="title">US ISP proxies</p>
+                                    <p class="desc">Secure ISP proxies for human-like scraping in the US</p>
+                                  </div>
+                                </a>
+                              </li>
+                            
+                              <li class="item">
+                                <a class="item-link" href="https://soax.com/proxies/mobile">
+                                  <img class="icon" src="https://soax.com/hubfs/Mobile.svg" alt="">
+                                  <div class="info">
+                                    <p class="title">Mobile proxies</p>
+                                    <p class="desc">Unlock mobile-only content with genuine mobile IPs</p>
+                                  </div>
+                                </a>
+                              </li>
+                            
+                              <li class="item">
+                                <a class="item-link" href="https://soax.com/proxies/datacenter">
+                                  <img class="icon" src="https://soax.com/hubfs/Datacenter.svg" alt="">
+                                  <div class="info">
+                                    <p class="title">Datacenter proxies</p>
+                                    <p class="desc">Reliable low-cost proxies for rapid data extraction</p>
+                                  </div>
+                                </a>
+                              </li>
+                            
+                          </ul>
+                        </div>
+
+                        <div class="locations-list-wrap">
+                          <p class="name">Top Proxy Locations</p>
+                          <ul class="locations-list">
+                            
+                              <li class="item">
+                                <a href="https://soax.com/proxies/locations/united-states">
+                                  USA
+                                </a>
+                              </li>
+                            
+                              <li class="item">
+                                <a href="https://soax.com/proxies/locations/united-kingdom">
+                                  UK
+                                </a>
+                              </li>
+                            
+                              <li class="item">
+                                <a href="https://soax.com/proxies/locations/india">
+                                  India
+                                </a>
+                              </li>
+                            
+                              <li class="item">
+                                <a href="https://soax.com/proxies/locations/china">
+                                  China
+                                </a>
+                              </li>
+                            
+                              <li class="item">
+                                <a href="https://soax.com/proxies/locations/russia">
+                                  Russia
+                                </a>
+                              </li>
+                            
+                              <li class="item">
+                                <a href="https://soax.com/proxies/locations/france">
+                                  France
+                                </a>
+                              </li>
+                            
+                          </ul>
+                          
+                        </div>
+                      </div>
+
+                      <div class="bottom-wrap">
+                        <a class="bottom-wrap-link" href="https://soax.com/proxies">
+                          Explore all proxies
+                        </a>
+                        
+                        <a class="more-link" href="https://soax.com/proxies/locations/">
+                            See all locations
+                          </a>
+                      </div>
+                    </div>
+                  
+                
+                
+                
+                  
+                
+                
+                
+                  
+                
+                
+                
+                  
+                
+                
+                
+                  
+                
+                
+                
+                  
+                
+                
+              </li>
+              
+              <li class="header__navigation-item sub ">
+                
+                <span class="header__navigation-link">
+                  Scraper APIs
+                </span>
+                 
+                
+                  
+                
+                
+                
+                  
+                    <div class="submenu submenu-proxies">
+                      <div class="submenu-wrap">
+                        <div class="submenu-list-wrap">
+                          <p class="name">Scraper</p>
+                          <ul class="proxies-list">
+                           
+                              <li class="item">
+                                <a class="item-link" href="https://soax.com/scraping/serp">
+                                  <img class="icon" src="https://soax.com/hubfs/SERP.svg" alt="">
+                                  <div class="info">
+                                    <p class="title">SERP APIs</p>
+                                    <p class="desc">Efficient SERP data scraping from major search engines</p>
+                                  </div>
+                                </a>
+                              </li>
+                            
+                              <li class="item">
+                                <a class="item-link" href="https://soax.com/scraping/social-media">
+                                  <img class="icon" src="https://soax.com/hubfs/Social.svg" alt="">
+                                  <div class="info">
+                                    <p class="title">Social media APIs</p>
+                                    <p class="desc">Turn social media trends and metrics into actionable data</p>
+                                  </div>
+                                </a>
+                              </li>
+                            
+                              <li class="item">
+                                <a class="item-link" href="https://soax.com/scraping/ecommerce">
+                                  <img class="icon" src="https://soax.com/hubfs/eCommerce.svg" alt="">
+                                  <div class="info">
+                                    <p class="title">eCommerce APIs</p>
+                                    <p class="desc">Extract product and pricing data in a structured format</p>
+                                  </div>
+                                </a>
+                              </li>
+                            
+                              <li class="item">
+                                <a class="item-link" href="https://soax.com/scraping/ai-scraper">
+                                  <img class="icon" src="https://soax.com/hubfs/AI.svg" alt="">
+                                  <div class="info">
+                                    <p class="title">AI scraper</p>
+                                    <p class="desc">Extract data with a simple request - no coding required!</p>
+                                  </div>
+                                </a>
+                              </li>
+                            
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="bottom-wrap">
+                        <a class="bottom-wrap-link" href="https://soax.com/scraping">
+                          Explore all scrapers
+                        </a>
+                      </div>
+                    </div>
+                  
+                
+                
+                
+                  
+                
+                
+                
+                  
+                
+                
+                
+                  
+                
+                
+                
+                  
+                
+                
+              </li>
+              
+              <li class="header__navigation-item  ">
+                
+                <a class="header__navigation-link" href="https://soax.com/unblocker">
+                  Web Unblocker
+                </a>
+                 
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+              </li>
+              
+              <li class="header__navigation-item sub ">
+                
+                <span class="header__navigation-link">
+                  Solutions
+                </span>
+                 
+                
+                  
+                
+                
+                
+                  
+                
+                
+                
+                  
+                    <div class="submenu submenu-proxies submenu-solutions">
+                      <div class="submenu-wrap">
+                        
+                          <div class="solutions-list-wrap">
+                            <p class="name">Top industries</p>
+                            <ul class="solutions-list">
+                              
+                                <li class="item">
+                                  <a class="item-link" href="https://soax.com/industries/market-research">Market research</a>
+                                </li>
+                              
+                                <li class="item">
+                                  <a class="item-link" href="https://soax.com/industries/ecommerce">eCommerce</a>
+                                </li>
+                              
+                                <li class="item">
+                                  <a class="item-link" href="https://soax.com/industries/goods-purchasing">Goods purchasing</a>
+                                </li>
+                              
+                                <li class="item">
+                                  <a class="item-link" href="https://soax.com/industries/recruitment">Recruitment</a>
+                                </li>
+                              
+                            </ul>
+                            <a class="more-link" href="https://soax.com/industries">
+                              See all industries
+                            </a>
+                          </div>
+                        
+                          <div class="solutions-list-wrap">
+                            <p class="name">Top use cases</p>
+                            <ul class="solutions-list">
+                              
+                                <li class="item">
+                                  <a class="item-link" href="https://soax.com/use-cases/data-collection">Data collection</a>
+                                </li>
+                              
+                                <li class="item">
+                                  <a class="item-link" href="https://soax.com/use-cases/cybersecurity">Cybersecurity</a>
+                                </li>
+                              
+                                <li class="item">
+                                  <a class="item-link" href="https://soax.com/use-cases/social-media">Social media monitoring</a>
+                                </li>
+                              
+                                <li class="item">
+                                  <a class="item-link" href="https://soax.com/use-cases/price-monitoring">Price monitoring</a>
+                                </li>
+                              
+                            </ul>
+                            <a class="more-link" href="https://soax.com/use-cases">
+                              See all use cases
+                            </a>
+                          </div>
+                        
+                          <div class="solutions-list-wrap">
+                            <p class="name">Top targets</p>
+                            <ul class="solutions-list">
+                              
+                                <li class="item">
+                                  <a class="item-link" href="https://soax.com/targets/youtube">YouTube</a>
+                                </li>
+                              
+                                <li class="item">
+                                  <a class="item-link" href="https://soax.com/targets/google-search">Google Search</a>
+                                </li>
+                              
+                                <li class="item">
+                                  <a class="item-link" href="https://soax.com/targets/instagram">Instagram</a>
+                                </li>
+                              
+                                <li class="item">
+                                  <a class="item-link" href="https://soax.com/targets/walmart">Walmart</a>
+                                </li>
+                              
+                            </ul>
+                            <a class="more-link" href="https://soax.com/targets/">
+                              See all targets
+                            </a>
+                          </div>
+                        
+                      </div>
+                    </div>
+                  
+                
+                
+                
+                  
+                
+                
+                
+                  
+                
+                
+                
+                  
+                
+                
+              </li>
+              
+              <li class="header__navigation-item sub ">
+                
+                <span class="header__navigation-link">
+                  Resources
+                </span>
+                 
+                
+                  
+                
+                
+                
+                  
+                
+                
+                
+                  
+                
+                
+                
+                  
+                    <div class="submenu submenu-proxies">
+                      <div class="submenu-wrap">
+                        <div class="submenu-list-wrap">
+                          <p class="name">Resources</p>
+                          <ul class="proxies-list">
+                           
+                              <li class="item">
+                                <a class="item-link" href="https://helpcenter.soax.com/">
+                                  <img class="icon" src="https://soax.com/hubfs/Help.svg" alt="">
+                                  <div class="info">
+                                    <p class="title">Help and support</p>
+                                    <p class="desc">Learn, fix a problem, and get answers to your questions</p>
+                                  </div>
+                                </a>
+                              </li>
+                            
+                              <li class="item">
+                                <a class="item-link" href="https://soax.com/blog">
+                                  <img class="icon" src="https://soax.com/hubfs/book.svg" alt="">
+                                  <div class="info">
+                                    <p class="title">Blog</p>
+                                    <p class="desc">Industry news, insights and updates from SOAX</p>
+                                  </div>
+                                </a>
+                              </li>
+                            
+                              <li class="item">
+                                <a class="item-link" href="https://soax.com/integrations">
+                                  <img class="icon" src="https://soax.com/hubfs/zap-1.svg" alt="">
+                                  <div class="info">
+                                    <p class="title">Integrations</p>
+                                    <p class="desc">Easily integrate SOAX proxies with leading third parties</p>
+                                  </div>
+                                </a>
+                              </li>
+                            
+                              <li class="item">
+                                <a class="item-link" href="https://soax.com/podcast">
+                                  <img class="icon" src="https://soax.com/hubfs/radio.svg" alt="">
+                                  <div class="info">
+                                    <p class="title">Podcast</p>
+                                    <p class="desc">Delve into the world of data and data collection</p>
+                                  </div>
+                                </a>
+                              </li>
+                            
+                              <li class="item">
+                                <a class="item-link" href="https://soax.com/tools">
+                                  <img class="icon" src="https://soax.com/hubfs/icon_tools.svg" alt="">
+                                  <div class="info">
+                                    <p class="title">Tools</p>
+                                    <p class="desc">Improve your workflow with our free tools.</p>
+                                  </div>
+                                </a>
+                              </li>
+                            
+                              <li class="item">
+                                <a class="item-link" href="https://soax.com/research" target="_blank" rel="noopener">
+                                  <img class="icon" src="https://soax.com/hubfs/icon_research_insights.svg" alt="">
+                                  <div class="info">
+                                    <p class="title">Research</p>
+                                    <p class="desc">Research, statistics, and data studies</p>
+                                  </div>
+                                </a>
+                              </li>
+                            
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  
+                
+                
+                
+                  
+                
+                
+                
+                  
+                
+                
+              </li>
+              
+              <li class="header__navigation-item sub ">
+                
+                <a class="header__navigation-link" href="https://soax.com/pricing">
+                  Pricing
+                </a>
+                 
+                
+                  
+                
+                
+                
+                  
+                
+                
+                
+                  
+                
+                
+                
+                  
+                
+                
+                
+                  
+                    <div class="submenu submenu-proxies submenu-solutions submenu-pricing">
+                      <div class="submenu-wrap">
+                        
+                          <div class="solutions-list-wrap">
+                            <p class="name">Proxies</p>
+                            <ul class="solutions-list">
+                              
+                                <li class="item">
+                                  <a class="item-link" href="https://soax.com/proxies/residential#module-pricing">
+                                    Residential proxies
+                                    <span class="info">From <span class="price">$2.20</span> /GB</span>
+                                  </a>
+                                </li>
+                              
+                                <li class="item">
+                                  <a class="item-link" href="https://soax.com/proxies/mobile#module-pricing">
+                                    Mobile proxies
+                                    <span class="info">From <span class="price">$2.20</span> /GB</span>
+                                  </a>
+                                </li>
+                              
+                                <li class="item">
+                                  <a class="item-link" href="https://soax.com/proxies/isp#module-pricing">
+                                    US ISP proxies
+                                    <span class="info">From <span class="price">$2.20</span> /GB</span>
+                                  </a>
+                                </li>
+                              
+                                <li class="item">
+                                  <a class="item-link" href="https://soax.com/proxies/datacenter#module-pricing">
+                                    Datacenter proxies
+                                    <span class="info">From <span class="price">$0.40</span> /GB</span>
+                                  </a>
+                                </li>
+                              
+                            </ul>
+                          </div>
+                        
+                          <div class="solutions-list-wrap">
+                            <p class="name">Scrapers</p>
+                            <ul class="solutions-list">
+                              
+                                <li class="item">
+                                  <a class="item-link" href="https://soax.com/scraping/serp">
+                                    SERP APIs
+                                    <span class="info"><span class="price">Custom</span></span>
+                                  </a>
+                                </li>
+                              
+                                <li class="item">
+                                  <a class="item-link" href="https://soax.com/scraping/ecommerce">
+                                    eCommerce APIs
+                                    <span class="info"><span class="price">Custom</span></span>
+                                  </a>
+                                </li>
+                              
+                                <li class="item">
+                                  <a class="item-link" href="https://soax.com/scraping/social-media">
+                                    Social media APIs
+                                    <span class="info"><span class="price">Custom</span></span>
+                                  </a>
+                                </li>
+                              
+                                <li class="item">
+                                  <a class="item-link" href="https://soax.com/scraping/ai-scraper">
+                                    AI Scraper
+                                    <span class="info"><span class="price">Custom</span></span>
+                                  </a>
+                                </li>
+                              
+                            </ul>
+                          </div>
+                        
+                          <div class="solutions-list-wrap">
+                            <p class="name">Additional solutions</p>
+                            <ul class="solutions-list">
+                              
+                                <li class="item">
+                                  <a class="item-link" href="https://soax.com/unblocker#module-pricing">
+                                    Web unblocker
+                                    <span class="info"><span class="price">Custom</span></span>
+                                  </a>
+                                </li>
+                              
+                            </ul>
+                          </div>
+                        
+                      </div>
+                    </div>
+                  
+                
+                
+                
+                  
+                
+                
+              </li>
+              
+            </ul>
+          </nav>
+          
+          <div class="header__mob-btn-wrap">
+            <a class="header__sign-up-mob sign-up-cta" href="https://auth.soax.com/sign-up">Start trial
+            </a>
+            <span class="header__burger"></span>
+          </div>
+          
+        </div>
+
+        <div class="mobile-navigation">
+          <ul class="menu-list">
+            
+            <li class="menu-item sub ">
+              <span class="menu-mob-item-link">
+                  Proxies
+              </span>
+             
+              
+              <div class="mobile-submenu mobile-submenu-proxies">
+                <p class="title">Proxies</p>
+                <ul class="sub-menu">
+                  
+                    <li class="sub-menu-item">
+                      <a class="sub-menu-item-link" href="https://soax.com/proxies/residential">
+                        <img class="sub-menu-icon" src="https://soax.com/hubfs/menu-icon.svg" alt="">
+                        <div class="sub-menu-info">
+                          <p class="sub-menu-title">Residential proxies</p>
+                          <p class="sub-menu-desc">Browse using 155m+ real IPs across multiple regions</p>
+                        </div>
+                      </a>
+                    </li>
+                  
+                    <li class="sub-menu-item">
+                      <a class="sub-menu-item-link" href="https://soax.com/proxies/isp">
+                        <img class="sub-menu-icon" src="https://soax.com/hubfs/USUSP.svg" alt="">
+                        <div class="sub-menu-info">
+                          <p class="sub-menu-title">US ISP proxies</p>
+                          <p class="sub-menu-desc">Secure ISP proxies for human-like scraping in the US</p>
+                        </div>
+                      </a>
+                    </li>
+                  
+                    <li class="sub-menu-item">
+                      <a class="sub-menu-item-link" href="https://soax.com/proxies/mobile">
+                        <img class="sub-menu-icon" src="https://soax.com/hubfs/Mobile.svg" alt="">
+                        <div class="sub-menu-info">
+                          <p class="sub-menu-title">Mobile proxies</p>
+                          <p class="sub-menu-desc">Unlock mobile-only content with genuine mobile IPs</p>
+                        </div>
+                      </a>
+                    </li>
+                  
+                    <li class="sub-menu-item">
+                      <a class="sub-menu-item-link" href="https://soax.com/proxies/datacenter">
+                        <img class="sub-menu-icon" src="https://soax.com/hubfs/Datacenter.svg" alt="">
+                        <div class="sub-menu-info">
+                          <p class="sub-menu-title">Datacenter proxies</p>
+                          <p class="sub-menu-desc">Reliable low-cost proxies for rapid data extraction</p>
+                        </div>
+                      </a>
+                    </li>
+                  
+                </ul>
+
+                <div class="more-btn">
+                  <a href="https://soax.com/proxies">
+                     Explore all proxies
+                  </a>
+                </div>
+
+                <p class="title">Top Proxy Locations</p>
+
+                <div class="sub-menu-location">
+                  <ul>
+                    
+                      <li class="item">
+                        <a href="https://soax.com/proxies/locations/united-states">
+                           USA
+                        </a>
+                      </li>
+                    
+                      <li class="item">
+                        <a href="https://soax.com/proxies/locations/united-kingdom">
+                           UK
+                        </a>
+                      </li>
+                    
+                      <li class="item">
+                        <a href="https://soax.com/proxies/locations/india">
+                           India
+                        </a>
+                      </li>
+                    
+                      <li class="item">
+                        <a href="https://soax.com/proxies/locations/china">
+                           China
+                        </a>
+                      </li>
+                    
+                      <li class="item">
+                        <a href="https://soax.com/proxies/locations/russia">
+                           Russia
+                        </a>
+                      </li>
+                    
+                      <li class="item">
+                        <a href="https://soax.com/proxies/locations/france">
+                           France
+                        </a>
+                      </li>
+                    
+                  </ul>
+                  <a class="more-location-btn" href="https://soax.com/proxies/locations/">
+                    See all locations
+                  </a>
+                </div>
+              </div>
+              
+            
+              
+           
+             
+           
+              
+           
+              
+           
+              
+           
+            
+           
+              
+           
+             
+           
+           
+              
+           
+             
+           
+          </li>
+        
+            <li class="menu-item sub ">
+              <span class="menu-mob-item-link">
+                  Scraper APIs
+              </span>
+             
+              
+            
+              
+           
+             
+              <div class="mobile-submenu mobile-submenu-proxies">
+                <p class="title">Scraper</p>
+                <ul class="sub-menu">
+                 
+                  <li class="sub-menu-item">
+                    <a class="sub-menu-item-link" href="https://soax.com/scraping/serp">
+                      <img class="sub-menu-icon" src="https://soax.com/hubfs/SERP.svg" alt="">
+                      <div class="sub-menu-info">
+                        <p class="sub-menu-title">SERP APIs</p>
+                        <p class="sub-menu-desc">
+                          Efficient SERP data scraping from major search engines
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  
+                  <li class="sub-menu-item">
+                    <a class="sub-menu-item-link" href="https://soax.com/scraping/social-media">
+                      <img class="sub-menu-icon" src="https://soax.com/hubfs/Social.svg" alt="">
+                      <div class="sub-menu-info">
+                        <p class="sub-menu-title">Social media APIs</p>
+                        <p class="sub-menu-desc">
+                          Turn social media trends and metrics into actionable data
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  
+                  <li class="sub-menu-item">
+                    <a class="sub-menu-item-link" href="https://soax.com/scraping/ecommerce">
+                      <img class="sub-menu-icon" src="https://soax.com/hubfs/eCommerce.svg" alt="">
+                      <div class="sub-menu-info">
+                        <p class="sub-menu-title">eCommerce APIs</p>
+                        <p class="sub-menu-desc">
+                          Extract product and pricing data in a structured format
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  
+                  <li class="sub-menu-item">
+                    <a class="sub-menu-item-link" href="https://soax.com/scraping/ai-scraper">
+                      <img class="sub-menu-icon" src="https://soax.com/hubfs/AI.svg" alt="">
+                      <div class="sub-menu-info">
+                        <p class="sub-menu-title">AI scraper</p>
+                        <p class="sub-menu-desc">
+                          Extract data with a simple request - no coding required!
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  
+                </ul>
+                <div class="more-btn">
+                  <a href="https://soax.com/scraping">
+                     Explore all scrapers
+                  </a>
+                </div>
+              </div>
+             
+           
+              
+           
+              
+           
+              
+           
+            
+           
+              
+           
+             
+           
+           
+              
+           
+             
+           
+          </li>
+        
+            <li class="menu-item  ">
+              <a class="menu-mob-item-link" href="https://soax.com/unblocker">
+                  Web Unblocker
+              </a>
+             
+              
+           
+              
+           
+              
+           
+              
+           
+           
+              
+           
+          </li>
+        
+            <li class="menu-item sub ">
+              <span class="menu-mob-item-link">
+                  Solutions
+              </span>
+             
+              
+            
+              
+           
+             
+           
+              
+           
+              
+               <div class="mobile-submenu mobile-submenu-solutions">
+                 
+                    <div class="solutions-item">
+                      <p class="title">Top industries</p>
+                      <div class="sub-menu-location">
+                        <ul>
+                          
+                            <li class="item">
+                              <a href="https://soax.com/industries/market-research">
+                                Market research
+                              </a>
+                            </li>
+                          
+                            <li class="item">
+                              <a href="https://soax.com/industries/ecommerce">
+                                eCommerce
+                              </a>
+                            </li>
+                          
+                            <li class="item">
+                              <a href="https://soax.com/industries/goods-purchasing">
+                                Goods purchasing
+                              </a>
+                            </li>
+                          
+                            <li class="item">
+                              <a href="https://soax.com/industries/recruitment">
+                                Recruitment
+                              </a>
+                            </li>
+                          
+                        </ul>
+                        <a class="more-location-btn" href="https://soax.com/industries">
+                          See all industries
+                        </a>
+                      </div>
+                    </div>
+                  
+                    <div class="solutions-item">
+                      <p class="title">Top use cases</p>
+                      <div class="sub-menu-location">
+                        <ul>
+                          
+                            <li class="item">
+                              <a href="https://soax.com/use-cases/data-collection">
+                                Data collection
+                              </a>
+                            </li>
+                          
+                            <li class="item">
+                              <a href="https://soax.com/use-cases/cybersecurity">
+                                Cybersecurity
+                              </a>
+                            </li>
+                          
+                            <li class="item">
+                              <a href="https://soax.com/use-cases/social-media">
+                                Social media monitoring
+                              </a>
+                            </li>
+                          
+                            <li class="item">
+                              <a href="https://soax.com/use-cases/price-monitoring">
+                                Price monitoring
+                              </a>
+                            </li>
+                          
+                        </ul>
+                        <a class="more-location-btn" href="https://soax.com/use-cases">
+                          See all use cases
+                        </a>
+                      </div>
+                    </div>
+                  
+                    <div class="solutions-item">
+                      <p class="title">Top targets</p>
+                      <div class="sub-menu-location">
+                        <ul>
+                          
+                            <li class="item">
+                              <a href="https://soax.com/targets/youtube">
+                                YouTube
+                              </a>
+                            </li>
+                          
+                            <li class="item">
+                              <a href="https://soax.com/targets/google-search">
+                                Google Search
+                              </a>
+                            </li>
+                          
+                            <li class="item">
+                              <a href="https://soax.com/targets/instagram">
+                                Instagram
+                              </a>
+                            </li>
+                          
+                            <li class="item">
+                              <a href="https://soax.com/targets/walmart">
+                                Walmart
+                              </a>
+                            </li>
+                          
+                        </ul>
+                        <a class="more-location-btn" href="https://soax.com/targets/">
+                          See all targets
+                        </a>
+                      </div>
+                    </div>
+                  
+              </div>
+            
+           
+              
+           
+            
+           
+              
+           
+             
+           
+           
+              
+           
+             
+           
+          </li>
+        
+            <li class="menu-item sub ">
+              <span class="menu-mob-item-link">
+                  Resources
+              </span>
+             
+              
+            
+              
+           
+             
+           
+              
+           
+              
+           
+              
+           
+             
+             <div class="mobile-submenu mobile-submenu-proxies">
+                <p class="title">Resources</p>
+                <ul class="sub-menu">
+                  
+                    <li class="sub-menu-item">
+                      <a class="sub-menu-item-link" href="https://helpcenter.soax.com/">
+                        <img class="sub-menu-icon" src="https://soax.com/hubfs/Help.svg" alt="">
+                        <div class="sub-menu-info">
+                          <p class="sub-menu-title">Help and support</p>
+                          <p class="sub-menu-desc">
+                            Learn, fix a problem, and get answers to your questions
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                  
+                    <li class="sub-menu-item">
+                      <a class="sub-menu-item-link" href="https://soax.com/blog">
+                        <img class="sub-menu-icon" src="https://soax.com/hubfs/book.svg" alt="">
+                        <div class="sub-menu-info">
+                          <p class="sub-menu-title">Blog</p>
+                          <p class="sub-menu-desc">
+                            Industry news, insights and updates from SOAX
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                  
+                    <li class="sub-menu-item">
+                      <a class="sub-menu-item-link" href="https://soax.com/integrations">
+                        <img class="sub-menu-icon" src="https://soax.com/hubfs/zap-1.svg" alt="">
+                        <div class="sub-menu-info">
+                          <p class="sub-menu-title">Integrations</p>
+                          <p class="sub-menu-desc">
+                            Easily integrate SOAX proxies with leading third parties
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                  
+                    <li class="sub-menu-item">
+                      <a class="sub-menu-item-link" href="https://soax.com/podcast">
+                        <img class="sub-menu-icon" src="https://soax.com/hubfs/radio.svg" alt="">
+                        <div class="sub-menu-info">
+                          <p class="sub-menu-title">Podcast</p>
+                          <p class="sub-menu-desc">
+                            Delve into the world of data and data collection
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                  
+                    <li class="sub-menu-item">
+                      <a class="sub-menu-item-link" href="https://soax.com/tools">
+                        <img class="sub-menu-icon" src="https://soax.com/hubfs/icon_tools.svg" alt="">
+                        <div class="sub-menu-info">
+                          <p class="sub-menu-title">Tools</p>
+                          <p class="sub-menu-desc">
+                            Improve your workflow with our free tools.
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                  
+                    <li class="sub-menu-item">
+                      <a class="sub-menu-item-link" href="https://soax.com/research" target="_blank" rel="noopener">
+                        <img class="sub-menu-icon" src="https://soax.com/hubfs/icon_research_insights.svg" alt="">
+                        <div class="sub-menu-info">
+                          <p class="sub-menu-title">Research</p>
+                          <p class="sub-menu-desc">
+                            Research, statistics, and data studies
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                  
+                </ul>
+              </div>
+             
+           
+              
+           
+             
+           
+           
+              
+           
+             
+           
+          </li>
+        
+            <li class="menu-item sub ">
+              <a class="menu-mob-item-link" href="https://soax.com/pricing">
+                  Pricing
+              </a>
+             
+              
+            
+              
+           
+             
+           
+              
+           
+              
+           
+              
+           
+            
+           
+              
+           
+                
+               <div class="mobile-submenu mobile-submenu-pricing">
+                 
+                    <div class="solutions-item">
+                      <p class="title">Proxies</p>
+                      <div class="sub-menu-location">
+                        <ul>
+                          
+                            <li class="item">
+                              <a href="https://soax.com/proxies/residential#module-pricing">
+                                 Residential proxies
+                                <span class="info">From <span class="price">$2.20</span> /GB</span>
+                              </a>
+                            </li>
+                          
+                            <li class="item">
+                              <a href="https://soax.com/proxies/mobile#module-pricing">
+                                 Mobile proxies
+                                <span class="info">From <span class="price">$2.20</span> /GB</span>
+                              </a>
+                            </li>
+                          
+                            <li class="item">
+                              <a href="https://soax.com/proxies/isp#module-pricing">
+                                 US ISP proxies
+                                <span class="info">From <span class="price">$2.20</span> /GB</span>
+                              </a>
+                            </li>
+                          
+                            <li class="item">
+                              <a href="https://soax.com/proxies/datacenter#module-pricing">
+                                 Datacenter proxies
+                                <span class="info">From <span class="price">$0.40</span> /GB</span>
+                              </a>
+                            </li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                 
+                    <div class="solutions-item">
+                      <p class="title">Scrapers</p>
+                      <div class="sub-menu-location">
+                        <ul>
+                          
+                            <li class="item">
+                              <a href="https://soax.com/scraping/serp">
+                                 SERP APIs
+                                <span class="info"><span class="price">Custom</span></span>
+                              </a>
+                            </li>
+                          
+                            <li class="item">
+                              <a href="https://soax.com/scraping/ecommerce">
+                                 eCommerce APIs
+                                <span class="info"><span class="price">Custom</span></span>
+                              </a>
+                            </li>
+                          
+                            <li class="item">
+                              <a href="https://soax.com/scraping/social-media">
+                                 Social media APIs
+                                <span class="info"><span class="price">Custom</span></span>
+                              </a>
+                            </li>
+                          
+                            <li class="item">
+                              <a href="https://soax.com/scraping/ai-scraper">
+                                 AI Scraper
+                                <span class="info"><span class="price">Custom</span></span>
+                              </a>
+                            </li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                 
+                    <div class="solutions-item">
+                      <p class="title">Additional solutions</p>
+                      <div class="sub-menu-location">
+                        <ul>
+                          
+                            <li class="item">
+                              <a href="https://soax.com/unblocker#module-pricing">
+                                 Web unblocker
+                                <span class="info"><span class="price">Custom</span></span>
+                              </a>
+                            </li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                 
+              </div>
+            
+           
+           
+              
+           
+             
+           
+          </li>
+        
+       </ul>
+
+          <div class="menu-contacts">
+            <ul class="menu-contacts-list">
+              
+               
+                <li>
+                  <a class="item open-new-popup" id="mob-btn-cta-1000557">
+                    Contact sales</a>
+                </li>
+                
+                  
+                   
+                  
+               
+               
+                <li>
+                  <a class="item " id="mob-btn-cta-1000177" href="https://auth.soax.com/sign-in">
+                    Log in</a>
+                </li>
+                
+                  
+                   
+                  
+               
+            </ul>
+            <a class="sign-up-btn sign-up-cta" href="https://auth.soax.com/sign-up">Start trial
+            </a>
+           
+          </div>
+        </div>
+
+        <div class="header__right">
+          <nav class="header__right-nav-container">
+            <ul class="header__navigation-right">
+               
+                
+                <li class="item">
+                  <a class="open-new-popup" id="btn-cta-1000642">
+                    Contact sales
+                  </a>
+                </li>
+              
+                
+                
+                 
+                
+              
+                
+                <li class="item">
+                  <a class="" id="btn-cta-1000115" href="https://auth.soax.com/sign-in">
+                    Log in
+                  </a>
+                </li>
+              
+                
+                
+                 
+                
+              
+            </ul>
+          </nav>
+          
+            <a class="header__sign-up sign-up-cta" href="https://auth.soax.com/sign-up">Start trial</a>
+          
+          
+        </div>
+      </div>
+     </div>
+    </header>
+
+            
+            
+                   
+            </div>
+
+</div>
+      
+      
+
+      <main id="main-content" class="body-container-wrapper">
+        
+
+<div class="container-fluid body-container body-container--home">
+<div class="row-fluid-wrapper">
+<div class="row-fluid">
+<div class="span12 widget-span widget-type-cell " style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-1 dnd_area-row-0-force-full-width-section dnd-section dnd_area-row-0-padding">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-cell cell_16995670910692-padding dnd-column" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-2 dnd-row">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_widget_1699567090354" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div class="module hero style-1">
+      <div class="container"> 
+        
+        <div class="hero-bg-wrap">
+            <div class="hero__bg style-5">
+              <div class="gradient gradient-1"></div>
+              <div class="gradient gradient-2"></div>
+              <div class="gradient gradient-3"></div>
+            </div>
+         </div>
+        
+        <div class="content">
+          
+         <!-- <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="file:///C:/Users/admin/Desktop/web/bem/index.html">Main</a></li>
+                  <li class="breadcrumb-item"><a href="#">Category</a></li>
+                  <li class="breadcrumb-item"><a href="#">Subcategory</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Current page</li>
+              </ol>
+          </nav> -->
+         
+            
+                   <div class="hero__reviews">
+                        
+                            
+                                    <span><img src="https://soax.com/hubfs/hero-reviews-1.svg" alt="G2" width="81" height="44"></span>
+                            
+                        
+                            
+                                    <span><img src="https://soax.com/hubfs/Capterra%20logo%20V3.svg" alt="Capterra" width="80" height="44"></span>
+                            
+                        
+                    </div>
+                
+      
+        <div class="hero__titles">
+         
+           
+          <h1 class="hero__title">
+               <!-- <span class="" id="randomText"><span class="dud">Collect web data at Sca</span>le</span> -->
+                The ecommerce scraper for real-time product data
+          </h1>
+           
+           
+              <div class="hero__desc">
+                Empower your ecommerce strategy with scalable structured data. Delegate proxy management, scraping, and parsing tasks to SOAX with our ecommerce scraper APIs.
+              </div>
+           
+          
+           
+          
+        </div>
+          
+        
+        <div class="hero__btns">
+          <div class="hero__btns-wrap">
+            
+            
+            
+              <a class="hero__btn-trial open-new-popup" id="hero__btn-trial" target="_blank">Contact sales</a>
+            
+          </div>
+          
+          
+        </div>
+       
+          
+        <!-- amplitude for btn primary  -->
+        
+          
+          <!-- amplitude for btn secondary  -->
+          
+           
+         
+         
+     
+      </div>
+        
+        
+         
+    </div>
+</div></div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-3 dnd_area-row-1-padding dnd-section dnd_area-row-1-force-full-width-section">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-cell cell_17067165803822-margin dnd-column cell_17067165803822-padding" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-4 dnd-row">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_widget_1706716625434" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div class="module logos logos-default">
+      
+        
+      
+      <div class="container">
+        
+          
+          
+          
+            
+          
+          
+            <a class="logo-link">
+                <img class="logos__item" src="https://soax.com/hubfs/amazon-logo-black.svg" alt="amazon logo black" loading="lazy" style="width: 100%; height: 2.3vw;">
+            </a>
+          
+        
+          
+          
+          
+            
+          
+          
+            <a class="logo-link">
+                <img class="logos__item" src="https://soax.com/hubfs/Aliexpress-logo-black.svg" alt="Aliexpress logo black" loading="lazy" style="width: 100%; height: 2.3vw;">
+            </a>
+          
+        
+          
+          
+          
+            
+          
+          
+            <a class="logo-link">
+                <img class="logos__item" src="https://soax.com/hubfs/ebay-logo-black.svg" alt="ebay logo black" loading="lazy" style="width: 100%; height: 2.3vw;">
+            </a>
+          
+        
+          
+          
+          
+            
+          
+          
+            <a class="logo-link">
+                <img class="logos__item" src="https://soax.com/hubfs/etsy-logo-black.svg" alt="etsy logo black" loading="lazy" style="width: 100%; height: 2.3vw;">
+            </a>
+          
+        
+          
+          
+          
+            
+          
+          
+            <a class="logo-link">
+                <img class="logos__item" src="https://soax.com/hubfs/walmart-logo-black.svg" alt="walmart logo black" loading="lazy" style="width: 100%; height: 2.3vw;">
+            </a>
+          
+        
+      </div>
+    
+</div></div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-5 dnd_area-row-2-force-full-width-section dnd_area-row-2-padding dnd-section dnd_area-row-2-margin">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-cell cell_17012663917502-padding dnd-column" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-6 dnd-row">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_widget_1706716935192" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div class="module titles hello">
+   
+      <h2 class="titles__title">
+         </h2><h2>Reliable&nbsp;<span>ecommerce </span>data collection</h2>
+      
+   
+</div></div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-7 dnd-row">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_module_1701777749513" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div class="module module_1701777749513 text-with-image left">
+        <div class="container">
+          <div class="text">
+            
+            
+            
+              
+              
+              
+                <h3 class="title">
+                  Data from the top 50 ecommerce platforms
+                </h3>
+              
+              
+              
+              
+            
+            
+            
+               <div class="desc">
+                  Get accurate product details in real time from the top marketplaces and ecommerce stores. With our ecommerce scraping API you can access data from multiple page types, including search results, product descriptions, prices, and images.
+               </div>
+            
+            
+              <div class="colums">
+                <ul class="column">
+                  
+                    <li>
+                      
+                      
+                      
+                        Amazon
+                      
+
+                    </li>
+                  
+                    <li>
+                      
+                      
+                      
+                        Walmart
+                      
+
+                    </li>
+                  
+                    <li>
+                      
+                      
+                      
+                        eBay
+                      
+
+                    </li>
+                  
+                    <li>
+                      
+                      
+                      
+                        AliExpress
+                      
+
+                    </li>
+                  
+                    <li>
+                      
+                      
+                      
+                        Etsy
+                      
+
+                    </li>
+                  
+                </ul>
+                <ul class="column"></ul>
+              </div>
+            
+           
+             
+            
+            <!-- amplitude for btn primary  -->
+            
+          </div>
+         
+          
+          <div class="image ">
+            
+            
+            
+            
+            
+            
+            
+            
+             <a><img src="https://soax.com/hs-fs/hubfs/Product%20page%20(2).png?width=700&amp;height=636&amp;name=Product%20page%20(2).png" alt="Product page (2)" loading="lazy" width="700" height="636" style="max-width: 100%; height: auto;" srcset="https://soax.com/hs-fs/hubfs/Product%20page%20(2).png?width=350&amp;height=318&amp;name=Product%20page%20(2).png 350w, https://soax.com/hs-fs/hubfs/Product%20page%20(2).png?width=700&amp;height=636&amp;name=Product%20page%20(2).png 700w, https://soax.com/hs-fs/hubfs/Product%20page%20(2).png?width=1050&amp;height=954&amp;name=Product%20page%20(2).png 1050w, https://soax.com/hs-fs/hubfs/Product%20page%20(2).png?width=1400&amp;height=1272&amp;name=Product%20page%20(2).png 1400w, https://soax.com/hs-fs/hubfs/Product%20page%20(2).png?width=1750&amp;height=1590&amp;name=Product%20page%20(2).png 1750w, https://soax.com/hs-fs/hubfs/Product%20page%20(2).png?width=2100&amp;height=1908&amp;name=Product%20page%20(2).png 2100w" sizes="(max-width: 700px) 100vw, 700px"></a> 
+            
+          </div>
+         
+        </div>
+        
+      
+      
+            <!-- amplitude for btn secondary  -->
+            
+      </div></div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-8 dnd-row">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_module_1701777474624" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div class="module module_1701777474624 text-with-image right">
+        <div class="container">
+          <div class="text">
+            
+            
+            
+              
+              
+              
+                <h3 class="title">
+                  Maintenance-free data collection tools
+                </h3>
+              
+              
+              
+              
+            
+            
+            
+               <div class="desc">
+                  Hand over proxy management to SOAX. Our ecommerce scraper API handles proxy rotation and automatically restarts any unsuccessful requests. You don�t need to manually set up any rules or have any prior coding knowledge.
+               </div>
+            
+            
+              <div class="colums">
+                <ul class="column">
+                  
+                    <li>
+                      
+                      
+                      
+                        No need for crawlers, scrapers, or parsers
+                      
+
+                    </li>
+                  
+                    <li>
+                      
+                      
+                      
+                        Integrate structured JSON or raw HTML data directly into your workflows
+                      
+
+                    </li>
+                  
+                    <li>
+                      
+                      
+                      
+                        Easy to set up, no coding required
+                      
+
+                    </li>
+                  
+                </ul>
+                <ul class="column"></ul>
+              </div>
+            
+           
+             
+            
+            <!-- amplitude for btn primary  -->
+            
+          </div>
+         
+          
+          <div class="image ">
+            
+            
+            
+            
+            
+            
+            
+            
+             <a><img src="https://soax.com/hs-fs/hubfs/Best%20Seller%20(2).png?width=700&amp;height=636&amp;name=Best%20Seller%20(2).png" alt="Best Seller (2)" loading="lazy" width="700" height="636" style="max-width: 100%; height: auto;" srcset="https://soax.com/hs-fs/hubfs/Best%20Seller%20(2).png?width=350&amp;height=318&amp;name=Best%20Seller%20(2).png 350w, https://soax.com/hs-fs/hubfs/Best%20Seller%20(2).png?width=700&amp;height=636&amp;name=Best%20Seller%20(2).png 700w, https://soax.com/hs-fs/hubfs/Best%20Seller%20(2).png?width=1050&amp;height=954&amp;name=Best%20Seller%20(2).png 1050w, https://soax.com/hs-fs/hubfs/Best%20Seller%20(2).png?width=1400&amp;height=1272&amp;name=Best%20Seller%20(2).png 1400w, https://soax.com/hs-fs/hubfs/Best%20Seller%20(2).png?width=1750&amp;height=1590&amp;name=Best%20Seller%20(2).png 1750w, https://soax.com/hs-fs/hubfs/Best%20Seller%20(2).png?width=2100&amp;height=1908&amp;name=Best%20Seller%20(2).png 2100w" sizes="(max-width: 700px) 100vw, 700px"></a> 
+            
+          </div>
+         
+        </div>
+        
+      
+      
+            <!-- amplitude for btn secondary  -->
+            
+      </div></div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-9 dnd-row">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_module_1701268841343" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div class="module module_1701268841343 text-with-image left">
+        <div class="container">
+          <div class="text">
+            
+            
+            
+              
+              
+              
+                <h3 class="title">
+                  Automated ecommerce data scraping
+                </h3>
+              
+              
+              
+              
+            
+            
+            
+               <div class="desc">
+                  Our ecommerce scraper API handles the data extraction process for you and eliminates the need for excessive manual input. All you need to do is set the parameters, and our API will set up a successful connection, identify the requested product field(s), and return results in the format you need.
+               </div>
+            
+            
+              <div class="colums">
+                <ul class="column">
+                  
+                    <li>
+                      
+                      
+                      
+                        Integrated browser fingerprint technology
+                      
+
+                    </li>
+                  
+                    <li>
+                      
+                      
+                      
+                        Headless scraping
+                      
+
+                    </li>
+                  
+                    <li>
+                      
+                      
+                      
+                        No CAPTCHAs, no blocks
+                      
+
+                    </li>
+                  
+                </ul>
+                <ul class="column"></ul>
+              </div>
+            
+           
+             
+            
+            <!-- amplitude for btn primary  -->
+            
+          </div>
+         
+          
+          <div class="image ">
+            
+            
+            
+            
+            
+            
+            
+            
+             <a><img src="https://soax.com/hs-fs/hubfs/scrapein_amazon_search_scraper_api_o.png?width=700&amp;height=636&amp;name=scrapein_amazon_search_scraper_api_o.png" alt="Scrapein Amazon Search Scraper API" loading="lazy" width="700" height="636" style="max-width: 100%; height: auto;" srcset="https://soax.com/hs-fs/hubfs/scrapein_amazon_search_scraper_api_o.png?width=350&amp;height=318&amp;name=scrapein_amazon_search_scraper_api_o.png 350w, https://soax.com/hs-fs/hubfs/scrapein_amazon_search_scraper_api_o.png?width=700&amp;height=636&amp;name=scrapein_amazon_search_scraper_api_o.png 700w, https://soax.com/hs-fs/hubfs/scrapein_amazon_search_scraper_api_o.png?width=1050&amp;height=954&amp;name=scrapein_amazon_search_scraper_api_o.png 1050w, https://soax.com/hs-fs/hubfs/scrapein_amazon_search_scraper_api_o.png?width=1400&amp;height=1272&amp;name=scrapein_amazon_search_scraper_api_o.png 1400w, https://soax.com/hs-fs/hubfs/scrapein_amazon_search_scraper_api_o.png?width=1750&amp;height=1590&amp;name=scrapein_amazon_search_scraper_api_o.png 1750w, https://soax.com/hs-fs/hubfs/scrapein_amazon_search_scraper_api_o.png?width=2100&amp;height=1908&amp;name=scrapein_amazon_search_scraper_api_o.png 2100w" sizes="(max-width: 700px) 100vw, 700px"></a> 
+            
+          </div>
+         
+        </div>
+        
+      
+      
+            <!-- amplitude for btn secondary  -->
+            
+      </div></div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-10 dnd-row">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_module_1701778611817" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div class="module module_1701778611817 text-with-image right">
+        <div class="container">
+          <div class="text">
+            
+            
+            
+              
+              
+              
+                <h3 class="title">
+                  Easily scalable structured data
+                </h3>
+              
+              
+              
+              
+            
+            
+            
+               <div class="desc">
+                  Our APIs are easily scalable, ensuring you can continue to scrape data from any ecommerce website without interruptions even during high-volume activities. Using SOAX�s ecommerce API allows you to conduct large-scale analysis without impacting performance.
+               </div>
+            
+            
+              <div class="colums">
+                <ul class="column">
+                  
+                    <li>
+                      
+                      
+                      
+                        100% success rate
+                      
+
+                    </li>
+                  
+                    <li>
+                      
+                      
+                      
+                        99.95% uptime
+                      
+
+                    </li>
+                  
+                    <li>
+                      
+                      
+                      
+                        &lt;2.5s response time
+                      
+
+                    </li>
+                  
+                </ul>
+                <ul class="column"></ul>
+              </div>
+            
+           
+             
+            
+            <!-- amplitude for btn primary  -->
+            
+          </div>
+         
+          
+          <div class="image ">
+            
+            
+            
+            
+            
+            
+            
+            
+             <a><img src="https://soax.com/hs-fs/hubfs/Customer%20Reviews%20Page%20(2).png?width=700&amp;height=636&amp;name=Customer%20Reviews%20Page%20(2).png" alt="Customer Reviews Page (2)" loading="lazy" width="700" height="636" style="max-width: 100%; height: auto;" srcset="https://soax.com/hs-fs/hubfs/Customer%20Reviews%20Page%20(2).png?width=350&amp;height=318&amp;name=Customer%20Reviews%20Page%20(2).png 350w, https://soax.com/hs-fs/hubfs/Customer%20Reviews%20Page%20(2).png?width=700&amp;height=636&amp;name=Customer%20Reviews%20Page%20(2).png 700w, https://soax.com/hs-fs/hubfs/Customer%20Reviews%20Page%20(2).png?width=1050&amp;height=954&amp;name=Customer%20Reviews%20Page%20(2).png 1050w, https://soax.com/hs-fs/hubfs/Customer%20Reviews%20Page%20(2).png?width=1400&amp;height=1272&amp;name=Customer%20Reviews%20Page%20(2).png 1400w, https://soax.com/hs-fs/hubfs/Customer%20Reviews%20Page%20(2).png?width=1750&amp;height=1590&amp;name=Customer%20Reviews%20Page%20(2).png 1750w, https://soax.com/hs-fs/hubfs/Customer%20Reviews%20Page%20(2).png?width=2100&amp;height=1908&amp;name=Customer%20Reviews%20Page%20(2).png 2100w" sizes="(max-width: 700px) 100vw, 700px"></a> 
+            
+          </div>
+         
+        </div>
+        
+      
+      
+            <!-- amplitude for btn secondary  -->
+            
+      </div></div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-11 dnd_area-row-3-hidden dnd-section dnd_area-row-3-padding dnd_area-row-3-force-full-width-section">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-cell cell_17066363516702-padding dnd-column" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-12 dnd-row">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<span id="hs_cos_wrapper_widget_1706636351660" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><!-- custom widget definition not found (portalId: null, path: null, moduleId: null) --></span>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-13 dnd_area-row-4-margin dnd-section dnd_area-row-4-force-full-width-section dnd_area-row-4-padding">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-cell cell_17013360567702-padding dnd-column cell_17013360567702-margin" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-14 dnd-row">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_widget_1701266391732" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div class="module cards-v2 style_3">
+      <div class="container">
+        
+        <div class="titles">
+          <div class="cards-v2__illustration show"></div>
+          
+            <h2>
+              Ecommerce data extraction&nbsp;<br><span>at scale</span>
+            </h2>
+           
+        </div>
+        
+        
+        <div class="cards-v2__list-wrap">
+          
+          
+          <div class="fcards-v2__list">
+          
+           <a class="cards-v2__list-item">
+              
+                <img class="icon" src="https://soax.com/hubfs/clock.svg" alt="">
+              
+              <div class="text">
+                 
+                    <p class="name">Easy integration</p>
+                 
+                 
+                  <p class="desc">Get started by converting your requests into production-ready code snippets in Python, Node, C#, etc to integrate APIs fast.</p>
+                 
+              </div>
+            </a>
+          
+           <a class="cards-v2__list-item">
+              
+                <img class="icon" src="https://soax.com/hubfs/clock.svg" alt="">
+              
+              <div class="text">
+                 
+                    <p class="name">Precise localization</p>
+                 
+                 
+                  <p class="desc">Access location-specific data when you want to emulate a user in another location and see a specific page from a different country.</p>
+                 
+              </div>
+            </a>
+          
+           <a class="cards-v2__list-item">
+              
+                <img class="icon" src="https://soax.com/hubfs/clock.svg" alt="">
+              
+              <div class="text">
+                 
+                    <p class="name">Quickly adapts to changes</p>
+                 
+                 
+                  <p class="desc">Get uninterrupted access to your data - the API quickly adapts to changes in a website�s information, elements, tags, or sections.</p>
+                 
+              </div>
+            </a>
+          
+           <a class="cards-v2__list-item">
+              
+                <img class="icon" src="https://soax.com/hubfs/clock.svg" alt="">
+              
+              <div class="text">
+                 
+                    <p class="name">Real-time results</p>
+                 
+                 
+                  <p class="desc">Get real-time information, accessing the latest data as it becomes available.</p>
+                 
+              </div>
+            </a>
+          
+          </div>
+        </div>
+        
+        <div class="our-features__container">
+          <div class="our-features__grid">
+           
+            <div class="our-features__card">
+              <div class="accordion our-features__card-heading">
+                
+                  <img class="our-features__card-thumb" src="https://soax.com/hubfs/clock.svg" alt="thumbs-up">
+                
+                
+                  <a class="our-features__card-title">
+                    Easy integration
+                  </a>
+                
+                <span class="accordion-icon"></span>
+              </div>
+              <div class="accordion-content our-features__card-content">
+                
+                  <p class="our-features__hybrid-section_content">
+                    Get started by converting your requests into production-ready code snippets in Python, Node, C#, etc to integrate APIs fast.
+                  </p>
+                
+              </div>
+              
+            </div>
+          
+            <div class="our-features__card">
+              <div class="accordion our-features__card-heading">
+                
+                  <img class="our-features__card-thumb" src="https://soax.com/hubfs/clock.svg" alt="thumbs-up">
+                
+                
+                  <a class="our-features__card-title">
+                    Precise localization
+                  </a>
+                
+                <span class="accordion-icon"></span>
+              </div>
+              <div class="accordion-content our-features__card-content">
+                
+                  <p class="our-features__hybrid-section_content">
+                    Access location-specific data when you want to emulate a user in another location and see a specific page from a different country.
+                  </p>
+                
+              </div>
+              
+            </div>
+          
+            <div class="our-features__card">
+              <div class="accordion our-features__card-heading">
+                
+                  <img class="our-features__card-thumb" src="https://soax.com/hubfs/clock.svg" alt="thumbs-up">
+                
+                
+                  <a class="our-features__card-title">
+                    Quickly adapts to changes
+                  </a>
+                
+                <span class="accordion-icon"></span>
+              </div>
+              <div class="accordion-content our-features__card-content">
+                
+                  <p class="our-features__hybrid-section_content">
+                    Get uninterrupted access to your data - the API quickly adapts to changes in a website�s information, elements, tags, or sections.
+                  </p>
+                
+              </div>
+              
+            </div>
+          
+            <div class="our-features__card">
+              <div class="accordion our-features__card-heading">
+                
+                  <img class="our-features__card-thumb" src="https://soax.com/hubfs/clock.svg" alt="thumbs-up">
+                
+                
+                  <a class="our-features__card-title">
+                    Real-time results
+                  </a>
+                
+                <span class="accordion-icon"></span>
+              </div>
+              <div class="accordion-content our-features__card-content">
+                
+                  <p class="our-features__hybrid-section_content">
+                    Get real-time information, accessing the latest data as it becomes available.
+                  </p>
+                
+              </div>
+              
+            </div>
+          
+          </div>  
+        </div>
+        
+        
+         <div class="module module-btn">
+            <a id="cards-cta-btn" class="open-new-popup" target="_blank" rel="noopener">
+              Contact sales
+             </a>
+         </div>
+        
+        
+        
+            
+         
+        
+
+      </div>
+  
+      <div class="cards-gradient purple">
+          <div class="gradient gradient-1"></div>
+          <div class="gradient gradient-2"></div>
+          <div class="gradient gradient-3"></div>
+      </div>
+  
+    </div></div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-15 dnd-section dnd_area-row-5-padding dnd_area-row-5-force-full-width-section">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-cell cell_17017804387392-padding dnd-column" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-16 dnd-row">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_widget_1701780438317" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div class="module titles hello">
+   
+      <h2 class="titles__title">
+         Maximize your scraping capabilities
+      </h2>
+   
+</div></div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-17 dnd_area-row-6-padding dnd-section dnd_area-row-6-force-full-width-section">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-cell cell_17017794493883-padding dnd-column" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-18 dnd-row">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_module_17017794493887" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div class="module module_17017794493887 text-with-image left">
+        <div class="container">
+          <div class="text">
+            
+            
+            
+              
+              
+              
+                <h3 class="title">
+                  Customize API filters
+                </h3>
+              
+              
+              
+              
+            
+            
+            
+               <div class="desc">
+                  You can customize your requests for the most relevant data using language, domain, and response encoding parameters. The API will return your structured data in a format that you can easily import into Excel or Google Sheets.
+               </div>
+            
+            
+              <div class="colums">
+                <ul class="column">
+                  
+                    <li>
+                      
+                      
+                      
+                        Set your own parameters
+                      
+
+                    </li>
+                  
+                    <li>
+                      
+                      
+                      
+                        Get data in multiple formats
+                      
+
+                    </li>
+                  
+                    <li>
+                      
+                      
+                      
+                        Use any programming language
+                      
+
+                    </li>
+                  
+                </ul>
+                <ul class="column"></ul>
+              </div>
+            
+           
+             
+            
+            <!-- amplitude for btn primary  -->
+            
+          </div>
+         
+          
+          <div class="image ">
+            
+            
+            
+            
+            
+            
+            
+            
+             <a><img src="https://soax.com/hs-fs/hubfs/Market.webp?width=842&amp;height=481&amp;name=Market.webp" alt="Market" loading="lazy" width="842" height="481" style="max-width: 100%; height: auto;" srcset="https://soax.com/hs-fs/hubfs/Market.webp?width=421&amp;height=241&amp;name=Market.webp 421w, https://soax.com/hs-fs/hubfs/Market.webp?width=842&amp;height=481&amp;name=Market.webp 842w, https://soax.com/hs-fs/hubfs/Market.webp?width=1263&amp;height=722&amp;name=Market.webp 1263w, https://soax.com/hs-fs/hubfs/Market.webp?width=1684&amp;height=962&amp;name=Market.webp 1684w, https://soax.com/hs-fs/hubfs/Market.webp?width=2105&amp;height=1203&amp;name=Market.webp 2105w, https://soax.com/hs-fs/hubfs/Market.webp?width=2526&amp;height=1443&amp;name=Market.webp 2526w" sizes="(max-width: 842px) 100vw, 842px"></a> 
+            
+          </div>
+         
+        </div>
+        
+      
+      
+            <!-- amplitude for btn secondary  -->
+            
+      </div></div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-19 dnd-row">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_module_17017794493888" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div class="module module_17017794493888 text-with-image right">
+        <div class="container">
+          <div class="text">
+            
+            
+            
+              
+              
+              
+                <h3 class="title">
+                  Access data from any location
+                </h3>
+              
+              
+              
+              
+            
+            
+            
+               <div class="desc">
+                  Gather global product information from ecommerce websites almost anywhere in the world. Our ecommerce API works alongside our international proxy network to easily gather information from around the world.
+               </div>
+            
+            
+              <div class="colums">
+                <ul class="column">
+                  
+                    <li>
+                      
+                      
+                      
+                        Access data from 195 countries
+                      
+
+                    </li>
+                  
+                    <li>
+                      
+                      
+                      
+                        Target your requests to the country, city, or zip code level
+                      
+
+                    </li>
+                  
+                    <li>
+                      
+                      
+                      
+                        Retrieve location-specific data
+                      
+
+                    </li>
+                  
+                    <li>
+                      
+                      
+                      
+                        Get data in different currencies
+                      
+
+                    </li>
+                  
+                    <li>
+                      
+                      
+                      
+                        Choose your target language
+                      
+
+                    </li>
+                  
+                </ul>
+                <ul class="column"></ul>
+              </div>
+            
+           
+             
+            
+            <!-- amplitude for btn primary  -->
+            
+          </div>
+         
+          
+          <div class="image ">
+            
+            
+            
+            
+            
+            
+            
+            
+             <a><img src="https://soax.com/hs-fs/hubfs/Screen%20(2)-1.png?width=842&amp;height=482&amp;name=Screen%20(2)-1.png" alt="Web unblocker" loading="lazy" width="842" height="482" style="max-width: 100%; height: auto;" srcset="https://soax.com/hs-fs/hubfs/Screen%20(2)-1.png?width=421&amp;height=241&amp;name=Screen%20(2)-1.png 421w, https://soax.com/hs-fs/hubfs/Screen%20(2)-1.png?width=842&amp;height=482&amp;name=Screen%20(2)-1.png 842w, https://soax.com/hs-fs/hubfs/Screen%20(2)-1.png?width=1263&amp;height=723&amp;name=Screen%20(2)-1.png 1263w, https://soax.com/hs-fs/hubfs/Screen%20(2)-1.png?width=1684&amp;height=964&amp;name=Screen%20(2)-1.png 1684w, https://soax.com/hs-fs/hubfs/Screen%20(2)-1.png?width=2105&amp;height=1205&amp;name=Screen%20(2)-1.png 2105w, https://soax.com/hs-fs/hubfs/Screen%20(2)-1.png?width=2526&amp;height=1446&amp;name=Screen%20(2)-1.png 2526w" sizes="(max-width: 842px) 100vw, 842px"></a> 
+            
+          </div>
+         
+        </div>
+        
+      
+      
+            <!-- amplitude for btn secondary  -->
+            
+      </div></div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-20 dnd-row">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_module_17017794493889" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div class="module module_17017794493889 text-with-image left">
+        <div class="container">
+          <div class="text">
+            
+            
+            
+              
+              
+              
+                <h3 class="title">
+                  Machine learning adaptive parser
+                </h3>
+              
+              
+              
+              
+            
+            
+            
+               <div class="desc">
+                  Our API will manage the scraping process for you, saving you time and effort in writing and maintaining your own scripting code. Our API automatically establishes proxy connection and rotation, and can handle markup changes without needing any input from you.
+               </div>
+            
+            
+              <div class="colums">
+                <ul class="column">
+                  
+                    <li>
+                      
+                      
+                      
+                        Manages JavaScript rendering
+                      
+
+                    </li>
+                  
+                    <li>
+                      
+                      
+                      
+                        Evades bots during scraping activities
+                      
+
+                    </li>
+                  
+                    <li>
+                      
+                      
+                      
+                        Provides refined data output
+                      
+
+                    </li>
+                  
+                    <li>
+                      
+                      
+                      
+                        Retrieves data from multiple pages and concentrates the results into one response
+                      
+
+                    </li>
+                  
+                </ul>
+                <ul class="column"></ul>
+              </div>
+            
+           
+             
+            
+            <!-- amplitude for btn primary  -->
+            
+          </div>
+         
+          
+          <div class="image ">
+            
+            
+            
+            
+            
+            
+            
+            
+             <a><img src="https://soax.com/hs-fs/hubfs/pantalla-3.webp?width=842&amp;height=481&amp;name=pantalla-3.webp" alt="pantalla-3" loading="lazy" width="842" height="481" style="max-width: 100%; height: auto;" srcset="https://soax.com/hs-fs/hubfs/pantalla-3.webp?width=421&amp;height=241&amp;name=pantalla-3.webp 421w, https://soax.com/hs-fs/hubfs/pantalla-3.webp?width=842&amp;height=481&amp;name=pantalla-3.webp 842w, https://soax.com/hs-fs/hubfs/pantalla-3.webp?width=1263&amp;height=722&amp;name=pantalla-3.webp 1263w, https://soax.com/hs-fs/hubfs/pantalla-3.webp?width=1684&amp;height=962&amp;name=pantalla-3.webp 1684w, https://soax.com/hs-fs/hubfs/pantalla-3.webp?width=2105&amp;height=1203&amp;name=pantalla-3.webp 2105w, https://soax.com/hs-fs/hubfs/pantalla-3.webp?width=2526&amp;height=1443&amp;name=pantalla-3.webp 2526w" sizes="(max-width: 842px) 100vw, 842px"></a> 
+            
+          </div>
+         
+        </div>
+        
+      
+      
+            <!-- amplitude for btn secondary  -->
+            
+      </div></div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-21 dnd-row">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_module_17004766436623" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div class="module cards-v2 style_4">
+      <div class="container">
+        
+        <div class="titles">
+          <div class="cards-v2__illustration hidden"></div>
+          
+            <h2>
+              Ecommerce API<span>&nbsp;use cases</span>
+            </h2>
+           
+        </div>
+        
+        
+        <div class="cards-v2__list-wrap">
+          
+          
+          <div class="fcards-v2__list">
+          
+           <a class="cards-v2__list-item" rel="nofollow">
+              
+                <img class="icon" src="https://soax.com/hubfs/magic-wand-01.svg" alt="">
+              
+              <div class="text">
+                 
+                    <p class="name">Competitor analysis</p>
+                 
+                 
+                  <p class="desc">Monitor your competitors� product listings and stock availability to boost your own business.</p>
+                 
+              </div>
+            </a>
+          
+           <a class="cards-v2__list-item" rel="nofollow">
+              
+                <img class="icon" src="https://soax.com/hubfs/star-01-1.svg" alt="">
+              
+              <div class="text">
+                 
+                    <p class="name">Catalog mapping</p>
+                 
+                 
+                  <p class="desc">Keep track of product inventory status and collect assortment data. Discover new categories and products to compete in.</p>
+                 
+              </div>
+            </a>
+          
+           <a class="cards-v2__list-item" rel="nofollow">
+              
+                <img class="icon" src="https://soax.com/hubfs/heart-hand-1.svg" alt="">
+              
+              <div class="text">
+                 
+                    <p class="name">Pricing intelligence</p>
+                 
+                 
+                  <p class="desc">Track real-time price changes for identical products on Amazon and adapt your pricing strategy accordingly.</p>
+                 
+              </div>
+            </a>
+          
+           <a class="cards-v2__list-item">
+              
+                <img class="icon" src="https://soax.com/hubfs/clock.svg" alt="">
+              
+              <div class="text">
+                 
+                    <p class="name">Monitoring trends</p>
+                 
+                 
+                  <p class="desc">Identify market trends and what influences them while keeping track of consumer demand.</p>
+                 
+              </div>
+            </a>
+          
+           <a class="cards-v2__list-item">
+              
+                <img class="icon" src="https://soax.com/hubfs/clock.svg" alt="">
+              
+              <div class="text">
+                 
+                    <p class="name">Generating content</p>
+                 
+                 
+                  <p class="desc">Extract product titles, descriptions, and features to generate engaging content for your customers.</p>
+                 
+              </div>
+            </a>
+          
+           <a class="cards-v2__list-item">
+              
+                <img class="icon" src="https://soax.com/hubfs/clock.svg" alt="">
+              
+              <div class="text">
+                 
+                    <p class="name">Consumer sentiment</p>
+                 
+                 
+                  <p class="desc">Monitor ratings, reviews, and customer feedback, and stay updated on the perception of specific products or brands.</p>
+                 
+              </div>
+            </a>
+          
+          </div>
+        </div>
+        
+        <div class="our-features__container">
+          <div class="our-features__grid">
+           
+            <div class="our-features__card">
+              <div class="accordion our-features__card-heading">
+                
+                  <img class="our-features__card-thumb" src="https://soax.com/hubfs/magic-wand-01.svg" alt="thumbs-up">
+                
+                
+                  <a class="our-features__card-title" rel="nofollow">
+                    Competitor analysis
+                  </a>
+                
+                <span class="accordion-icon"></span>
+              </div>
+              <div class="accordion-content our-features__card-content">
+                
+                  <p class="our-features__hybrid-section_content">
+                    Monitor your competitors� product listings and stock availability to boost your own business.
+                  </p>
+                
+              </div>
+              
+            </div>
+          
+            <div class="our-features__card">
+              <div class="accordion our-features__card-heading">
+                
+                  <img class="our-features__card-thumb" src="https://soax.com/hubfs/star-01-1.svg" alt="thumbs-up">
+                
+                
+                  <a class="our-features__card-title" rel="nofollow">
+                    Catalog mapping
+                  </a>
+                
+                <span class="accordion-icon"></span>
+              </div>
+              <div class="accordion-content our-features__card-content">
+                
+                  <p class="our-features__hybrid-section_content">
+                    Keep track of product inventory status and collect assortment data. Discover new categories and products to compete in.
+                  </p>
+                
+              </div>
+              
+            </div>
+          
+            <div class="our-features__card">
+              <div class="accordion our-features__card-heading">
+                
+                  <img class="our-features__card-thumb" src="https://soax.com/hubfs/heart-hand-1.svg" alt="thumbs-up">
+                
+                
+                  <a class="our-features__card-title" rel="nofollow">
+                    Pricing intelligence
+                  </a>
+                
+                <span class="accordion-icon"></span>
+              </div>
+              <div class="accordion-content our-features__card-content">
+                
+                  <p class="our-features__hybrid-section_content">
+                    Track real-time price changes for identical products on Amazon and adapt your pricing strategy accordingly.
+                  </p>
+                
+              </div>
+              
+            </div>
+          
+            <div class="our-features__card">
+              <div class="accordion our-features__card-heading">
+                
+                  <img class="our-features__card-thumb" src="https://soax.com/hubfs/clock.svg" alt="thumbs-up">
+                
+                
+                  <a class="our-features__card-title">
+                    Monitoring trends
+                  </a>
+                
+                <span class="accordion-icon"></span>
+              </div>
+              <div class="accordion-content our-features__card-content">
+                
+                  <p class="our-features__hybrid-section_content">
+                    Identify market trends and what influences them while keeping track of consumer demand.
+                  </p>
+                
+              </div>
+              
+            </div>
+          
+            <div class="our-features__card">
+              <div class="accordion our-features__card-heading">
+                
+                  <img class="our-features__card-thumb" src="https://soax.com/hubfs/clock.svg" alt="thumbs-up">
+                
+                
+                  <a class="our-features__card-title">
+                    Generating content
+                  </a>
+                
+                <span class="accordion-icon"></span>
+              </div>
+              <div class="accordion-content our-features__card-content">
+                
+                  <p class="our-features__hybrid-section_content">
+                    Extract product titles, descriptions, and features to generate engaging content for your customers.
+                  </p>
+                
+              </div>
+              
+            </div>
+          
+            <div class="our-features__card">
+              <div class="accordion our-features__card-heading">
+                
+                  <img class="our-features__card-thumb" src="https://soax.com/hubfs/clock.svg" alt="thumbs-up">
+                
+                
+                  <a class="our-features__card-title">
+                    Consumer sentiment
+                  </a>
+                
+                <span class="accordion-icon"></span>
+              </div>
+              <div class="accordion-content our-features__card-content">
+                
+                  <p class="our-features__hybrid-section_content">
+                    Monitor ratings, reviews, and customer feedback, and stay updated on the perception of specific products or brands.
+                  </p>
+                
+              </div>
+              
+            </div>
+          
+          </div>  
+        </div>
+        
+        
+        
+        
+        
+
+      </div>
+  
+      <div class="cards-gradient purple">
+          <div class="gradient gradient-1"></div>
+          <div class="gradient gradient-2"></div>
+          <div class="gradient gradient-3"></div>
+      </div>
+  
+    </div></div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-22 dnd-section dnd_area-row-7-force-full-width-section dnd_area-row-7-padding">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_widget_1700479043209" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+<div class="module contacts style-1 style-1-act">
+      <div class="container">
+        <div class="contacts__block">
+          
+          <h2 class="contacts__title">
+            Sign up to test our ecommerce scraper API
+          </h2>
+          
+          <div class="contacts__btns">
+            
+            
+            <a class="experts-btn open-new-popup" id="popup-amplitude">
+              Talk to our experts
+               
+                <img src="https://soax.com/hubfs/avatar-1.svg" alt="">
+              
+            </a>
+            
+              
+            
+            
+            
+            
+            
+                
+              
+          </div>
+          
+        </div>
+      </div>
+      <div class="contacts__bottom default"></div>
+    </div>
+
+
+
+
+
+
+
+
+ </div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-23 dnd-section">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-24 dnd-row">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_module_17139763938534" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div class="faq">
+      <div class="container">
+       
+          
+            <div class="module titles">
+                <h2>
+                   <div style="text-align: center;"><span>Frequently asked questions</span></div>
+                </h2>
+            </div>
+          
+      
+            <div class="faq__content">
+                <div class="faq__items">
+                  
+                    <div class="faq__items-item" id="">
+                        <div class="head">
+                            <h4>What is ecommerce data scraping?</h4>
+                        </div>
+                        <div class="content">
+                       
+                               <p>Ecommerce data scraping is is the process of using automated tools to extract information from ecommerce websites, including details such as product listings, prices, reviews, and inventory data. This technique lets you collect large volumes of data, which you can then use for market analysis, price monitoring, and competitive intelligence.</p>
+<p><a href="/blog/web-scraping" rel="noopener">Learn more about web scraping</a></p>
+                        
+                        </div>
+                    </div>
+                   
+                    <div class="faq__items-item" id="">
+                        <div class="head">
+                            <h4>How long does the ecommerce API take to return results?</h4>
+                        </div>
+                        <div class="content">
+                       
+                               Typically, the API returns results in less than 10 seconds. You can explore our ecommerce scraper API with a $1.99 trial. You can also access various code samples in our guides.
+                        
+                        </div>
+                    </div>
+                   
+                    <div class="faq__items-item" id="">
+                        <div class="head">
+                            <h4>Does the API have any usage limits?</h4>
+                        </div>
+                        <div class="content">
+                       
+                               Yes, our ecommerce scraper API has usage limits based on the pricing plan you choose. Each plan allows a number of monthly requests. If you surpass this limit, you can purchase additional requests.
+                        
+                        </div>
+                    </div>
+                   
+                    <div class="faq__items-item" id="">
+                        <div class="head">
+                            <h4>Are there constraints on the number of concurrent requests you allow?</h4>
+                        </div>
+                        <div class="content">
+                       
+                               Our ecommerce API allows you to have multiple concurrent requests. However, the number of concurrent requests you can have depends on which pricing plan you use. We can provide up to 1 billion (1000M) requests per month and scale up rapidly as needed.
+                        
+                        </div>
+                    </div>
+                   
+                    <div class="faq__items-item" id="">
+                        <div class="head">
+                            <h4>How do I use your ecommerce API?</h4>
+                        </div>
+                        <div class="content">
+                       
+                               Our API serves as a proxy solution for web scraping, streamlining the process at scale. It simplifies scraping by eliminating the need to find high-quality proxies, manage rotating proxy pools, handle ban detection, solve CAPTCHAs, and manage geo-targeting and JavaScript rendering. With this API, you can effortlessly send a request to the simple REST API interface, and we will promptly return the structured JSON or raw HTML response from the target website.
+                        
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+  </div>
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        
+        {
+          "@type": "Question",
+          "name": "What is ecommerce data scraping?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Ecommerce data scraping is is the process of using automated tools to extract information from ecommerce websites, including details such as product listings, prices, reviews, and inventory data. This technique lets you collect large volumes of data, which you can then use for market analysis, price monitoring, and competitive intelligence.<\/p>\n<p><a href=\"\/blog\/web-scraping\" rel=\"noopener\">Learn more about web scraping<\/a><\/p>"
+          }
+        },
+        
+        {
+          "@type": "Question",
+          "name": "How long does the ecommerce API take to return results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Typically, the API returns results in less than 10 seconds. You can explore our ecommerce scraper API with a $1.99 trial. You can also access various code samples in our guides."
+          }
+        },
+        
+        {
+          "@type": "Question",
+          "name": "Does the API have any usage limits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, our ecommerce scraper API has usage limits based on the pricing plan you choose. Each plan allows a number of monthly requests. If you surpass this limit, you can purchase additional requests."
+          }
+        },
+        
+        {
+          "@type": "Question",
+          "name": "Are there constraints on the number of concurrent requests you allow?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our ecommerce API allows you to have multiple concurrent requests. However, the number of concurrent requests you can have depends on which pricing plan you use. We can provide up to 1 billion (1000M) requests per month and scale up rapidly as needed."
+          }
+        },
+        
+        {
+          "@type": "Question",
+          "name": "How do I use your ecommerce API?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our API serves as a proxy solution for web scraping, streamlining the process at scale. It simplifies scraping by eliminating the need to find high-quality proxies, manage rotating proxy pools, handle ban detection, solve CAPTCHAs, and manage geo-targeting and JavaScript rendering. With this API, you can effortlessly send a request to the simple REST API interface, and we will promptly return the structured JSON or raw HTML response from the target website."
+          }
+        }
+        
+      ]
+    }
+</script></div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div>
+</div>
+</div>
+
+      </main>
+
+      
+      <div data-global-resource-path="soax-theme-live/templates/partials/footer-temp.html"><footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer__logo">
+            <div id="hs_cos_wrapper_logo" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-linked_image" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+    
+
+
+
+
+
+
+  
+
+
+
+<span id="hs_cos_wrapper_logo_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_linked_image" style="" data-hs-cos-general-type="widget" data-hs-cos-type="linked_image"><a href="https://soax.com/" target="_parent" id="hs-link-logo_" style="border-width:0px;border:0px;"><img src="https://soax.com/hubfs/SOAX-Logo-2.svg" class="hs-image-widget " style="width:119px;border-width:0px;border:0px;" width="119" alt="SOAX" title="SOAX"></a></span></div>
+          </div>
+          
+
+          <div class="footer__contact">
+            <h4>Contact</h4>
+            <div class="footer__contact-item">
+              <div>Email:</div><div id="hs_cos_wrapper_email" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><span id="hs_cos_wrapper_email_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="text"><a href="mailto:support@soax.com">support@soax.com</a></span></div>
+            </div>
+            
+          </div>
+
+          <div class="footer__social-wrap">
+            <h4>Reach us here</h4>
+            <div class="footer__social-list">
+             <div id="hs_cos_wrapper_module_social-follow" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div class="footer__social">
+
+  
+
+  
+
+    
+
+    
+    
+    
+    
+      
+    
+    
+      
+    
+
+    
+
+    
+      
+    
+
+    
+
+    
+        
+        
+            
+        
+        
+        
+        
+        
+        
+        <a class="footer__social-link" href="https://www.linkedin.com/company/soax-network/about/" target="_blank" rel="nofollow noopener">
+            <img src="https://soax.com/hubfs/raw_assets/public/soax-theme-live/images/module-icons/in.svg" width="16" height="16" alt="Follow us on LinkedIn">
+        </a>
+    
+  
+
+    
+
+    
+    
+    
+    
+      
+    
+    
+      
+    
+
+    
+
+    
+      
+    
+
+    
+
+    
+        
+        
+        
+            
+        
+        
+        
+        
+        
+        <a class="footer__social-link" href="https://twitter.com/soaxproxy" target="_blank" rel="nofollow noopener">
+            <img src="https://soax.com/hubfs/raw_assets/public/soax-theme-live/images/module-icons/twiter.svg" width="16" height="16" alt="Follow us on Twitter">
+        </a>
+    
+  
+
+    
+
+    
+    
+    
+    
+      
+    
+    
+      
+    
+
+    
+
+    
+      
+    
+
+    
+
+    
+        
+        
+        
+        
+            
+        
+        
+        
+        
+        <a class="footer__social-link" href="https://www.facebook.com/soaxproxy" target="_blank" rel="nofollow noopener">
+            <img src="https://soax.com/hubfs/raw_assets/public/soax-theme-live/images/module-icons/facebook.svg" width="16" height="16" alt="Follow us on Instagram">
+        </a>
+    
+  
+
+    
+
+    
+    
+    
+    
+      
+    
+    
+      
+    
+
+    
+
+    
+      
+    
+
+    
+
+    
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        <a class="footer__social-link" href="https://www.youtube.com/@soaxproxy" target="_blank" rel="nofollow noopener">
+            <img src="https://soax.com/hubfs/raw_assets/public/soax-theme-live/images/module-icons/youtube.svg" width="16" height="16" alt="Follow us on Facebook">
+        </a>
+    
+  
+
+</div></div>
+            </div>
+          </div>
+        </div>
+
+        
+          <div class="footer__menu-container">
+            <nav>
+              <div id="hs_cos_wrapper_module_16947241433922" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+<div class="footer__menu-container">
+  
+  <div class="footer__links-col">
+    <span></span>
+    <span id="hs_cos_wrapper_module_16947241433922_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="menu"><div id="hs_menu_wrapper_module_16947241433922_" class="hs-menu-wrapper active-branch flyouts hs-menu-flow-horizontal" role="navigation" data-sitemap-name="default" data-menu-id="79618102466" aria-label="Navigation Menu">
+ <ul role="menu">
+  <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children" role="none"><a href="javascript:;" aria-haspopup="true" aria-expanded="false" role="menuitem">Our company</a>
+   <ul role="menu" class="hs-menu-children-wrapper">
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://soax.com/about" role="menuitem">About</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://soax.com/careers" role="menuitem">Careers</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://soax.com/affiliates" role="menuitem">Affiliate Program</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://auth.soax.com/sign-in" role="menuitem">Log In</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://auth.soax.com/sign-up" role="menuitem">Sign Up</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://helpcenter.soax.com/en/" role="menuitem">Help Center</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://soax.com/compare" role="menuitem">Compare SOAX</a></li>
+   </ul></li>
+  <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children" role="none"><a href="javascript:;" aria-haspopup="true" aria-expanded="false" role="menuitem">Products</a>
+   <ul role="menu" class="hs-menu-children-wrapper">
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://soax.com/proxies/residential" role="menuitem">Residential Proxies</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://soax.com/proxies/mobile" role="menuitem">Mobile Proxies</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://soax.com/proxies/isp" role="menuitem">US ISP Proxies</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://soax.com/proxies/datacenter" role="menuitem">Datacenter Proxies</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://soax.com/unblocker" role="menuitem">Web Unblocker</a></li>
+   </ul></li>
+  <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children" role="none"><a href="javascript:;" aria-haspopup="true" aria-expanded="false" role="menuitem">Tools</a>
+   <ul role="menu" class="hs-menu-children-wrapper">
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://soax.com/tools/proxy-checker" role="menuitem">Proxy Checker</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://soax.com/tools/what-is-my-ip" role="menuitem">What is my IP</a></li>
+   </ul></li>
+  <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children" role="none"><a href="javascript:;" aria-haspopup="true" aria-expanded="false" role="menuitem">Research</a>
+   <ul role="menu" class="hs-menu-children-wrapper">
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://soax.com/research/mobile-website-traffic" role="menuitem">Mobile website traffic</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://soax.com/research/time-spent-on-social-media" role="menuitem">Average time spent on social media</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://soax.com/research/cost-of-cybercrime" role="menuitem">Cost of cybercrime</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://soax.com/research/browser-market-share" role="menuitem">Browser market share</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://soax.com/research/how-many-users-does-instagram-have" role="menuitem">How many users does Instagram have</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://soax.com/research/how-many-users-does-facebook-have" role="menuitem">How many users does Facebook have</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://soax.com/research/average-age-of-tiktok-users" role="menuitem">What's the average age of TikTok users</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://soax.com/research/telegram-users" role="menuitem">How many users does Telegram have</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://soax.com/research/how-many-people-use-social-media" role="menuitem">How many people use social media</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://soax.com/research/twitter-active-users" role="menuitem">How many users does X (Twitter) have</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://soax.com/research/top-social-media-platforms" role="menuitem">What are the top social media platforms in 2024</a></li>
+   </ul></li>
+  <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children" role="none"><a href="javascript:;" aria-haspopup="true" aria-expanded="false" role="menuitem">Legal</a>
+   <ul role="menu" class="hs-menu-children-wrapper">
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://soax.com/legal/kyc" role="menuitem">KYC and Compliance</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://soax.com/soax-ethical-guidelines" role="menuitem">Ethics</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://soax.com/legal/sla" role="menuitem">Service Level Agreement (SLA)</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://soax.com/legal/terms" role="menuitem">Terms of Use</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://soax.com/legal/cookies" role="menuitem">Cookie Policy</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://soax.com/legal/privacy" role="menuitem">Privacy Policy</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://forms.soax.com/report-abuse" role="menuitem" target="_blank" rel="noopener">Report Service Abuse</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://soax.com/legal/disputes" role="menuitem" target="_blank" rel="noopener">Refund &amp; Cancelation Policy</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://status.soax.com/" role="menuitem" target="_blank" rel="noopener">Service Status</a></li>
+   </ul></li>
+ </ul>
+</div></span>
+  </div>
+  
+</div>
+
+
+
+
+</div>
+            </nav>
+          </div>
+       
+   
+        <div class="footer__bg-mob">
+          <div class="radial-gradient-mob-1"></div>
+          <div class="radial-gradient-mob-2"></div>
+        </div>
+
+        <div class="radial-gradient"></div>
+        <div class="radial-gradient-2"></div>
+
+
+      </div>
+    </footer></div>
+      
+    </div>
+    
+   
+    
+    
+    
+    <div class="soax-form-popup-v2">
+      <div class="popup-overlay-v2">
+        <div class="popup">
+          <span class="close-popup-v2">�</span>
+          <div class="soax-form-v2" style="width: 100%; height: 100%;" data-fillout-id="a5qmmiMqSAus" data-fillout-embed-type="standard" data-fillout-inherit-parameters="" data-fillout-dynamic-resize="" data-fillout-domain="forms.soax.com">
+            &nbsp;
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    
+    
+    
+   
+    
+    
+    
+    
+    
+<!-- HubSpot performance collection script -->
+<script defer src="https://static.hsappstatic.net/content-cwv-embed/static-1.1293/embed.js"></script>
+<script defer src="https://soax.com/hs-fs/hub/25298778/hub_generated/template_assets/69463470797/1716327656066/soax-theme-live/js/tracks-temp.min.js"></script>
+<script defer src="https://soax.com/hs-fs/hub/25298778/hub_generated/template_assets/68232061666/1723570822301/soax-theme-live/js/main.min.js"></script>
+<script defer src="https://soax.com/hs-fs/hub/25298778/hub_generated/template_assets/112930363847/1724883128873/soax-theme-live/js/fillout-form-v2.min.js"></script>
+<script>
+var hsVars = hsVars || {}; hsVars['language'] = 'en';
+</script>
+
+<script src="/hs/hsstatic/cos-i18n/static-1.53/bundles/project.js"></script>
+<script src="https://soax.com/hs-fs/hub/25298778/hub_generated/module_assets/96218327266/1726749209324/module_96218327266_header-menu-v3.min.js"></script>
+
+                     <script>
+                       document.addEventListener('DOMContentLoaded', function () {
+                          var button = document.getElementById('mob-btn-cta-1000557');
+                          if (button) {
+                              button.addEventListener('click', function(e) {
+                                  amplitude.track('contact us form opened', {domain: window.location.host, path: window.location.pathname, name: 'Contact Us'});
+                                  console.log('header mob clk')
+                              });
+                          }
+                      });
+                     </script>
+                   
+
+                     <script>
+                       document.addEventListener('DOMContentLoaded', function () {
+                          var button = document.getElementById('mob-btn-cta-1000177');
+                          if (button) {
+                              button.addEventListener('click', function(e) {
+                                  amplitude.track('signin clicked', {domain: 'soax.com', path: '/'});
+                                  console.log('header mob clk')
+                              });
+                          }
+                      });
+                     </script>
+                   
+
+                   <script>
+                     document.addEventListener('DOMContentLoaded', function () {
+                        var button = document.getElementById('btn-cta-1000642');
+                        if (button) {
+                            button.addEventListener('click', function(e) {
+                                amplitude.track('contact us form opened', {domain: window.location.host, path: window.location.pathname, name: 'Contact Us'});
+                                console.log('header clk')
+                            });
+                        }
+                    });
+                   </script>
+                 
+
+                   <script>
+                     document.addEventListener('DOMContentLoaded', function () {
+                        var button = document.getElementById('btn-cta-1000115');
+                        if (button) {
+                            button.addEventListener('click', function(e) {
+                                amplitude.track('signin clicked', {domain: 'soax.com', path: '/'});
+                                console.log('header clk')
+                            });
+                        }
+                    });
+                   </script>
+                 
+
+                     <script>
+                       document.addEventListener('DOMContentLoaded', function () {
+                            var buttons = document.getElementsByClassName('sign-up-cta');
+                            for (var i = 0; i < buttons.length; i++) {
+                                buttons[i].addEventListener('click', function(e) {
+                                    amplitude.track('signup clicked', {domain: 'soax.com', path: '/', button: 'Sign Up'});
+                                    console.log('clk');
+                                });
+                            }
+                        });
+                     </script>
+                   
+
+             <script>
+               document.addEventListener('DOMContentLoaded', function () {
+                  var button = document.getElementById('hero__btn-trial');
+                  if (button) {
+                      button.addEventListener('click', function(e) {
+                          amplitude.track('contact us form opened', {domain: window.location.host, path: window.location.pathname, name: 'Contact Us'});
+                          console.log('secondary clk')
+                      });
+                  }
+              });
+             </script>
+           
+<script src="https://soax.com/hs-fs/hub/25298778/hub_generated/module_assets/82848822000/1724957658996/module_82848822000_title-image-cards-v3.min.js"></script>
+<script src="https://soax.com/hs-fs/hub/25298778/hub_generated/module_assets/83594346717/1724687616360/module_83594346717_cards-v3.min.js"></script>
+
+              <script>
+                  document.addEventListener("DOMContentLoaded", function() {
+                    document.addEventListener("click", function(e) {
+                        if (e.target && e.target.id === "cards-cta-btn") {
+                            amplitude.track('contact us form opened', {domain: window.location.host, path: window.location.pathname, name: 'Contact Us'});
+                            console.log("cards-cta-btn");
+                        }
+                    });
+                });
+              </script>
+            
+
+                  <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                      document.addEventListener('click', function(e) {
+                        if (e.target && e.target.id === 'popup-amplitude') {
+                          amplitude.track('contact us form opened', {domain: window.location.host, path: window.location.pathname, name: 'Contact Us'});
+                          console.log("popup-amplitude");
+                        }
+                      });
+                    });
+                  </script>
+                
+
+                  <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                      document.addEventListener('click', function(e) {
+                        if (e.target && e.target.id === 'cta-info-btn') {
+                          amplitude.track('signup clicked', {domain: window.location.host, path: window.location.pathname, button: 'Talk to our experts'});
+                          console.log("cta-info-btn");
+                        }
+                      });
+                    });
+                  </script>
+                
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+      const urlPath = window.location.pathname;
+      const linkElement = document.querySelector('.experts-btn.open-new-popup#popup-amplitude');
+
+      if (urlPath === '/careers') {
+        const hrefValue = 'https://soax.com/contact-us';
+        linkElement.setAttribute('href', hrefValue);
+        linkElement.classList.remove('open-new-popup');
+      }
+    });
+    </script>
+
+<script src="https://soax.com/hs-fs/hub/25298778/hub_generated/module_assets/83738520027/1724687905212/module_83738520027_questions-v3.min.js"></script>
+<script src="/hs/hsstatic/keyboard-accessible-menu-flyouts/static-1.17/bundles/project.js"></script>
+
+<script>
+const links_custom = document.querySelectorAll('footer .hs-menu-item.hs-menu-depth-1.hs-item-has-children a');
+
+links_custom.forEach(function(link_custom) {
+    enlace.addEventListener('focus', function(event) {
+        event.preventDefault();
+    });
+});
+
+
+</script>
+
+
+<!-- Start of HubSpot Analytics Code -->
+<script type="text/javascript">
+var _hsq = _hsq || [];
+_hsq.push(["setContentType", "standard-page"]);
+_hsq.push(["setCanonicalUrl", "https:\/\/soax.com\/scraping\/ecommerce"]);
+_hsq.push(["setPageId", "87263923960"]);
+_hsq.push(["setContentMetadata", {
+    "contentPageId": 87263923960,
+    "legacyPageId": "87263923960",
+    "contentFolderId": null,
+    "contentGroupId": null,
+    "abTestId": null,
+    "languageVariantId": 87263923960,
+    "languageCode": "en",
+    
+    
+}]);
+</script>
+
+<script type="text/javascript" id="hs-script-loader" async defer src="/hs/scriptloader/25298778.js"></script>
+<!-- End of HubSpot Analytics Code -->
+
+
+<script type="text/javascript">
+var hsVars = {
+    render_id: "726f9abe-6e53-41fd-9969-b231bbf30043",
+    ticks: 1728073198495,
+    page_id: 87263923960,
+    
+    content_group_id: 0,
+    portal_id: 25298778,
+    app_hs_base_url: "https://app-eu1.hubspot.com",
+    cp_hs_base_url: "https://cp-eu1.hubspot.com",
+    language: "en",
+    analytics_page_type: "standard-page",
+    scp_content_type: "",
+    analytics_page_id: "87263923960",
+    category_id: 1,
+    folder_id: 0,
+    is_hubspot_user: false
+}
+</script>
+
+
+<script defer src="/hs/hsstatic/HubspotToolsMenu/static-1.354/js/index.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.min.js"></script>
+<script>
+function checkDeviceId(n) {
+  if (n > 10) return;
+  var deviceId = amplitude.getDeviceId();
+  if(!deviceId) {
+    window.setTimeout(checkDeviceId, (n+1)*100, n+1);
+  } else {
+    if (deviceId) {
+      Cookies.set('device_id', deviceId, { domain: '.soax.com' });
+    }
+  }
+}
+checkDeviceId(0);
+
+/** Set Google ClickID cookie */
+urlParams = new URLSearchParams(window.location.search)
+gclid = urlParams.get('gclid')
+if (gclid) {
+  Cookies.set('soax_gclid', gclid, { domain: '.soax.com', expires: 90 });
+}
+
+/** Set affiliate cookie */
+afmc = urlParams.get('afmc')
+r = urlParams.get('r')
+irclickid = urlParams.get('irclickid')
+if (afmc) {
+  Cookies.set('referral_param_click_id', afmc, {domain: '.soax.com', expires: 365});
+  amplitude.track('affiliate visit', {'code': afmc, 'type': 'afmc', 'referrer': document.referrer, 'domain': window.location.host, 'path': window.location.pathname});
+} else if (r) {
+  Cookies.set('referral_param_click_id', r, {domain: '.soax.com', expires: 365});
+  amplitude.track('affiliate visit', {'code': r, 'type': 'r', 'referrer': document.referrer, 'domain': window.location.host, 'path': window.location.pathname});
+} else if (irclickid) {
+  Cookies.set('referral_param_click_id', 'irclickid:' + irclickid, {domain: '.soax.com', expires: 365});
+  amplitude.track('affiliate visit', {'code': irclickid, 'type': 'irclickid', 'referrer': document.referrer, 'domain': window.location.host, 'path': window.location.pathname});
+}
+
+/** Send data to Intercom */
+function checkIntercom(n) {
+  if (n > 10) return;
+  if(typeof Intercom === 'undefined' || Intercom === null) {
+    window.setTimeout(checkIntercom, (n+1)*100, n+1);
+  } else {
+    Intercom('update', {"ampl_device_id": amplitude.getDeviceId()});
+    urlParams = new URLSearchParams(window.location.search);
+    gclid = urlParams.get('gclid');
+    if (gclid) {
+      Intercom('update', {"gclid": gclid});
+    }
+  }
+}
+checkIntercom(0);
+
+</script>
+
+
+    
+   
+  
+</body></html>

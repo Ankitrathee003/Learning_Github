@@ -1,0 +1,41 @@
+import numpy as np
+m1=np.array([[1,2],[3,4]])
+m2=np.array([[8,2],[4,7]])
+m2t=np.array([[0,0],[0,0]])
+m3t=np.array([[0,0],[0,0]])
+
+# print(len(m2))
+# m2t=m2
+# print(m2t)
+print(m2[1,1])
+def mt(m2,m2t):
+    for i in range (0,len(m2)):
+        for j in range (0,len(m2)):
+         m2t[i,j]+=m2[j,i]
+    print(m2t)  
+mt(m2,m2t)
+
+
+l=[]
+for i in range(len(m2)):
+    
+    l0=[]
+    
+    for k in range(len(m2)):
+        sum=0
+        for j in range(len(m2)):
+            sum+=m1[i,j]*m2t[k,j]
+        l0.append(sum)
+    l.append(l0)
+multiply=np.array(l)
+print(multiply)
+    
+
+       
+# mul=np.array([[0,0],[0,0]])
+# for i in range (0,len(m1)):
+#     for j in range(0,len(m2)):
+#         mul[i,j]=mul[i,j]+m1[i,j]*m2[j,i]   
+# print(mul)        
+
+
